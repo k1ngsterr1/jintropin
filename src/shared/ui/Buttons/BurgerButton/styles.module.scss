@@ -1,0 +1,30 @@
+.burger_button {
+    position: relative;
+    width: 32px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    z-index: 2000;
+    cursor: pointer;
+
+    .burger_button__line {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: clamp(1.5px, 0.70092vw, 6px);
+        transition: transform 0.3s ease;
+        @apply bg-primary;
+
+        &:nth-child(1) {
+            top: clamp(5px, 2.3364vw, 20px);
+        }
+
+        &:nth-child(2) {
+            top: clamp(9px, 4.20552vw, 36px);
+        }
+
+        &:nth-child(3) {
+            top: clamp(13px, 6.07464vw, 52px);
+        }
+    }
+}
