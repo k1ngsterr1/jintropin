@@ -1,0 +1,76 @@
+@import "breakpoint-slicer";
+@import "../../../styles/mixins";
+@import "../../../styles/variables.scss";
+
+
+.button {
+    width: clamp(130px, 60.746399999999994vw, 520px);
+    height: clamp(27.5px, 12.8502vw, 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s all;
+    font-family: "Raleway", sans-serif;
+
+    @include respond-to("xxs") {
+        font-size: clamp(7px, 3.889vw, 28px);
+    }
+
+    @include respond-to("xs") {
+        width: clamp(130px, 54.166666666666664vw, 520px);
+        height: clamp(27.5px, 11.458333333333334vw, 110px);
+        font-size: clamp(7px, 2.9166666666666665vw, 28px);
+    }
+
+    @include respond-to("sm") {
+        width: clamp(130px, 33.854166666666664vw, 520px);
+        height: clamp(27.5px, 7.161458333333333vw, 110px);
+        font-size: clamp(7px, 1.8229166666666667vw, 28px);
+    }
+
+    @include respond-to("md") {
+        width: clamp(130px, 26.20967741935484vw, 520px);
+        height: clamp(27.5px, 5.544354838709677vw, 110px);
+        font-size: clamp(7px, 1.4112903225806452vw, 28px);
+    }
+
+    @include respond-to("lg") {
+        width: clamp(115px, 16.912vw, 460px);
+        height: clamp(25px, 3.676vw, 100px);
+        font-size: clamp(7px, 1.1666666666666667vw, 28px);
+    }
+
+    @include respond-to("xl") {
+        width: clamp(130px, 19.11764705882353vw, 520px);
+        height: clamp(27.5px, 4.044117647058823vw, 110px);
+        font-size: clamp(7px, 1.0294117647058822vw, 28px);
+    }
+
+    @include respond-to("2xl") {
+        width: clamp(100px, 10.416vw, 400px);
+        height: clamp(22.5px, 2.3436vw, 90px);
+        font-size: clamp(7px, 0.72912vw, 28px);
+    }
+}
+
+.button--filled {
+    @extend .button;
+    @apply bg-primary;
+    @apply text-dark;
+
+}
+
+.button--outline {
+    @extend .button;
+    border: 1.5px solid;
+    @apply border-primary;
+    @apply text-primary;
+    transition: 0.3s all;
+    border-radius: 3px;
+
+    &:hover {
+        @apply bg-primary;
+        @apply text-dark;
+    }
+}

@@ -11,9 +11,10 @@
     left: 0px;
     z-index: -100;
     @apply gap-4;
-    @apply bg-white;
+    @apply bg-dark;
 
     &__link {
         @apply text-3xl;
+        @apply text-primary;
     }
 }

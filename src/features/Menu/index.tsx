@@ -16,7 +16,7 @@ export const Menu: React.FC<IBurgerMenuProps> = ({ isOpen, menuRef }) => {
                     {link.label}
                 </a>
             ))}
-            <Button text='Submit' margin='mt-4' />
+            <Button text="Отправить заявку" buttonType='filled' margin='mt-4' />
         </div>
     );
 };
