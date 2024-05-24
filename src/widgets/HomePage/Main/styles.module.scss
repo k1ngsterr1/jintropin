@@ -1,0 +1,40 @@
+.container {
+    width: 86.6%;
+    margin: auto;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: clamp(523px, 54.479vw, 2092px);
+    }
+
+    &__heading {
+        font-size: clamp(32px, 64 / 1520 * 100vw, 128px);
+        width: 85%;
+        font-family: "Unbounded", sans-serif;
+        @apply mt-16;
+
+        &__span {
+            @apply text-white;
+        }
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 28%;
+        @apply mt-4;
+        position: relative;
+
+        &__video {
+            text-decoration: underline;
+            @apply mt-6;
+            display: flex;
+            justify-content: space-between;
+            @apply gap-4;
+            align-items: center;
+        }
+    }
+}

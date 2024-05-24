@@ -11,6 +11,7 @@
     justify-content: center;
     cursor: pointer;
     transition: 0.3s all;
+    position: relative;
     font-family: "Raleway", sans-serif;
 
     @include respond-to("xxs") {
@@ -58,7 +59,13 @@
     @extend .button;
     @apply bg-primary;
     @apply text-dark;
+    transition: 0.3s all;
+    border-radius: 3px;
 
+    &:hover {
+        @apply bg-dark;
+        @apply text-primary;
+    }
 }
 
 .button--outline {
