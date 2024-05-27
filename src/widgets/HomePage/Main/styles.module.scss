@@ -6,12 +6,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: clamp(523px, 54.479vw, 2092px);
+        height: clamp(517.5px, 53.9028vw, 2070px);
     }
 
     &__heading {
-        font-size: clamp(32px, 64 / 1520 * 100vw, 128px);
-        width: 85%;
+        font-size: clamp(32px, 3.33312vw, 128px);
+        width: 60%;
         font-family: "Unbounded", sans-serif;
         @apply mt-16;
 

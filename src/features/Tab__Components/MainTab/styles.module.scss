@@ -1,8 +1,7 @@
 .container {
     width: 100%;
     @apply bg-primary;
-    position: absolute;
-    bottom: 0;
+    margin-top: clamp(227px, 23.64432vw, 908px);
     @apply p-8;
 
     &__box {

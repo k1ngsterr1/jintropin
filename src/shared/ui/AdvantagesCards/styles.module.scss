@@ -1,0 +1,9 @@
+.btn {
+    width: 100%;
+    @apply bg-primary;
+    @apply text-blue;
+    height: clamp(30px, 3.1248vw, 120px);
+    font-family: "Unbounded", sans-serif;
+    border-radius: 6px;
+    font-weight: 600;
+}
