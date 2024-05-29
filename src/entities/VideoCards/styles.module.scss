@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+
+    &__items {
+        position: absolute;
+        top: 0;
+
+        &__heading {
+            font-family: "Unbounded", sans-serif;
+            font-size: clamp(14px, 1.45824vw, 56px);
+
+            &--yellow {
+                @apply text-primary;
+            }
+
+            &--yellow {
+                @apply text-blue;
+
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.separator {
+    width: auto;
+    border: 3px;
+}
+
+.separator--yellow {
+    @extend .separator;
+    @apply border-primary;
+}
+
+.separator--blue {
+    @extend .separator;
+    @apply border-blue;
+}

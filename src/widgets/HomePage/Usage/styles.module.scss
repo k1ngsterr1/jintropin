@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     @apply mt-28;
+    top: 0;
+    background-image: url('@assets/Usage/DjineSlides.svg');
 
     &__heading {
         font-size: clamp(32px, 3.33312vw, 128px);

@@ -1,0 +1,14 @@
+.separator {
+    width: auto;
+    border: 3px;
+}
+
+.separator--yellow {
+    @extend .separator;
+    @apply border-primary;
+}
+
+.separator--blue {
+    @extend .separator;
+    @apply border-blue;
+}
