@@ -1,13 +1,11 @@
-import { tabItems } from '@shared/lib/content/MainTabContent/items'
-import Pill from '@assets/pill.svg'
+import { tabItems } from '@shared/lib/content/SocialTabContent/items'
 
 import styles from './styles.module.scss'
 
-export const MainTab = () => {
+export const SocialMediaTab = () => {
     return (
         <div className={styles.container}>
             <div className={styles.container__box}>
-                <img src={Pill} alt="" />
                 <div className={styles.container__items}>
                     {tabItems.map((item) => (
                         <div className={styles.container__items__text}>
@@ -15,7 +13,6 @@ export const MainTab = () => {
                         </div>
                     ))}
                 </div>
-                <img src={Pill} alt="" />
             </div>
         </div>
     )

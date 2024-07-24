@@ -2,17 +2,19 @@ import Paragraph from '@shared/ui/Paragraph'
 import Button from "@shared/ui/Buttons/ReactButton";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import { MainTab } from '@features/Tab__Components/MainTab';
+import { SocialMediaTab } from '@features/Tab__Components/SocialMediaTab';
+
+import MainIll from '@assets/Main/MainPageIll.webp'
 
 import styles from './styles.module.scss'
 
-import BicepsImg from '@assets/biceps.svg'
 
 export const Main = () => {
     return (
         <>
             <main className={styles.container}>
-                <img src={BicepsImg} alt="картинка бицепса" className={styles.container__img} />
+                <SocialMediaTab />
+                <img src={MainIll} alt="" className={styles.container__img} />
                 <h1 className={styles.container__heading}><span className={styles.container__heading__span}>Джинтропин 10 ME -  </span> Лучший Гормон Роста</h1>
                 <Paragraph
                     paragraphType='white'
@@ -29,7 +31,6 @@ export const Main = () => {
                     </a>
                 </div>
             </main>
-            <MainTab />
         </>
     )
 }

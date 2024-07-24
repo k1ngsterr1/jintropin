@@ -5,5 +5,4 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
     { label: "+7 777 288 6600", href: "/" },
-    { label: "sales@jintropine", href: "/services" },
 ];

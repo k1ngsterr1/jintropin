@@ -41,7 +41,8 @@ export const Header = () => {
                             </a>
                         ))}
                         <ThemeSwitcher />
-                        <Button text="Отправить заявку" buttonType='outline' />
+                        <Button text="Написать в Whatsapp" buttonType='outline' />
+                        <Button text="Получить консультацию" buttonType='outline' />
                     </nav>
                 </div>
             </header>

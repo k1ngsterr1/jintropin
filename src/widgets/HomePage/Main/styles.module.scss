@@ -3,10 +3,10 @@
     margin: auto;
 
     &__img {
+        z-index: -100;
         position: absolute;
         top: 0;
         left: 0;
-        height: clamp(517.5px, 53.9028vw, 2070px);
     }
 
     &__heading {
