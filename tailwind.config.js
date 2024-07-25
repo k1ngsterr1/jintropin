@@ -11,7 +11,8 @@ export default {
         primary: "#FFF200",
         dark: "#1A1A1A",
         white: "#FFFFFF",
-        blue: '#182F67'
+        blue: '#182F67',
+        gray: '#252525'
       },
     },
   },

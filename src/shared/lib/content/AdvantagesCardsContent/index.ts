@@ -1,39 +1,31 @@
-import Runner from "@assets/Advantages/Advantages__Runner.png";
-import Fighter from "@assets/Advantages/Advantages__fighter.png";
-import Bodybuilder from "@assets/Advantages/Advantages__bodybuilder.png";
-import Girl from "@assets/Advantages/Advantages__girl.png";
+import builder from '@assets/Advantages/bolshoiNigga.png'
+import sport from '@assets/Advantages/sport.png'
+import fighter from '@assets/Advantages/fighter.png'
+import molodaya from '@assets/Advantages/molodaya.png'
 
-export interface CardData {
-    imgSrc: string;
-    text: string;
-    buttonClass: string;
-    textClass: string;
-}
-
-export const cardsData: CardData[] = [
+export const items = [
     {
-        imgSrc: Runner,
-        text: 'Начинающий спортсмен',
-        buttonClass: "ml-10",
-        textClass: 'mt-12'
+        id: 1,
+        image: builder,
+        number: '01',
+        title: 'БОДИБИЛДИНГ',
     },
     {
-        imgSrc: Fighter,
-        text: 'Боец ММА',
-        buttonClass: 'ml-12 mt-32',
-        textClass: 'mt-28'
+        id: 2,
+        image: sport,
+        number: '02',
+        title: 'НАЧИНАЮЩИЙ СПОРТСМЕН',
     },
     {
-        imgSrc: Bodybuilder,
-        text: 'Бодибилдер',
-        buttonClass: "z-10 ml-6 mt-16",
-        textClass: 'mt-12 w-[79%] ml-7'
+        id: 3,
+        image: fighter,
+        number: '03',
+        title: 'БОЕВЫЕ ИССКУСТВА',
     },
     {
-        imgSrc: Girl,
-        text: 'Омоложение',
-        buttonClass: "relative right-10 mt-28",
-        textClass: 'mt-10'
-    }
+        id: 4,
+        image: molodaya,
+        number: '04',
+        title: 'АНТИ-AGE ТЕРАПИЯ',
+    },
 ];
-

@@ -1,16 +1,16 @@
-import React, { FC } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import React from 'react'
+import { IconType } from 'react-icons'
 
-interface SocialButtonI extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    icon: IconDefinition;
-    href: string;
+import styles from './styles.module.scss'
+
+interface SocialButtonI extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    icon: IconType;
 }
 
-export const SocialButton: React.FC<SocialButtonI> = ({ icon, href }) => {
+export const SocialButton: React.FC<SocialButtonI> = ({ icon: Icon, href, ...props }) => {
     return (
-        <a href={href}>
-            <FontAwesomeIcon icon={icon} />
+        <a className={styles.button} href={href} {...props}>
+            <Icon size={25} />
         </a>
     )
 }

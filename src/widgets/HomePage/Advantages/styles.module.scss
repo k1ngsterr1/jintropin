@@ -1,15 +1,16 @@
 .container {
     display: flex;
     flex-direction: column;
-    @apply mt-20;
+    @apply pb-28;
 
     &__heading {
         font-size: clamp(32px, 3.33312vw, 128px);
-        width: 65%;
+        width: 35%;
         margin: auto;
         text-align: center;
-        font-family: "Unbounded", sans-serif;
+        font-family: "Oswald", sans-serif;
         @apply text-white;
+        @apply mt-16;
 
         &__span {
             @apply text-primary;

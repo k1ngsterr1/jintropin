@@ -5,14 +5,19 @@ import styles from './styles.module.scss'
 export const SocialMediaTab = () => {
     return (
         <div className={styles.container}>
-            <div className={styles.container__box}>
-                <div className={styles.container__items}>
-                    {tabItems.map((item) => (
-                        <div className={styles.container__items__text}>
-                            {item.label}
+            <p className={styles.container__text}>Социальные сети</p>
+            <div className={styles.container__items}>
+                {
+                    tabItems.map((item, index) => (
+                        <div key={index}>
+                            {item.icons.map((icon, idx) => (
+                                <div key={idx} className={styles.container__items__icon}>
+                                    {icon}
+                                </div>
+                            ))}
                         </div>
-                    ))}
-                </div>
+                    ))
+                }
             </div>
         </div>
     )

@@ -12,3 +12,9 @@
     @extend .paragraph;
     @apply text-dark;
 }
+
+.paragraph--yellow {
+    @extend .paragraph;
+    @apply text-primary;
+    font-family: "Unbounded", sans-serif;
+}

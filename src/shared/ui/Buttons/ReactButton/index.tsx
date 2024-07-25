@@ -26,11 +26,3 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
-
-// Usage Example:
-// <Button
-//   margin='mt-4'
-//   text='Submit'
-//   buttonType='filled'
-//   onClick={() => console.log('Button clicked')}
-// />

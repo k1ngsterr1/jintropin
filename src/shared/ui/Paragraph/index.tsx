@@ -7,7 +7,7 @@ interface Props {
     align?: string;
     width?: string;
     lineHeight?: string;
-    paragraphType: 'white' | 'dark';
+    paragraphType: 'white' | 'dark' | 'yellow';
 }
 
 const Paragraph: React.FC<Props> = ({ text, margin, width, align, lineHeight, paragraphType }) => {

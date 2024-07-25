@@ -12,6 +12,7 @@
     cursor: pointer;
     transition: 0.3s all;
     position: relative;
+    font-weight: 700;
     font-family: "Raleway", sans-serif;
 
     @include respond-to("xxs") {
