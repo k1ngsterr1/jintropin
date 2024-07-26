@@ -1,24 +1,15 @@
 .container {
     display: flex;
     flex-direction: column;
-    // position: relative;
-    @apply mt-96;
-
-    &__img {
-        width: clamp(900px, 93.744vw, 3600px);
-        margin: auto;
-    }
+    align-items: center;
 
     &__heading {
         font-size: clamp(32px, 3.33312vw, 128px);
-        width: 65%;
+        width: 35%;
         margin: auto;
         text-align: center;
         font-family: "Oswald", sans-serif;
         @apply text-white;
-
-        &__span {
-            @apply text-primary;
-        }
+        @apply mt-16 pt-20;
     }
 }

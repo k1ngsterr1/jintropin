@@ -1,0 +1,56 @@
+.container {
+
+    &__img {
+        width: clamp(900px, 93.744vw, 3600px);
+        position: absolute;
+        margin-top: clamp(50px, 5.208vw, 200px);
+        margin-left: clamp(22.5px, 2.3436vw, 90px);
+    }
+
+    &__video {
+        margin: auto;
+        position: relative;
+        @apply pt-64;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        @apply pt-52;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: clamp(15px, 1.5624vw, 60px);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        &__img {
+            position: relative;
+        }
+
+        &__text {
+            position: absolute;
+            @apply p-3;
+            font-family: 'Unbounded', sans-serif;
+            width: 80%;
+            // left: 100px;
+            text-align: left;
+            font-size: clamp(14px, 1.45824vw, 56px);
+            display: flex;
+            gap: 10px;
+        }
+
+        &__separator {
+            border: 2px;
+        }
+    }
+}

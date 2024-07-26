@@ -1,5 +1,8 @@
 .container {
     background-color: rgba(255, 255, 255, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__heading {
         font-size: clamp(32px, 3.33312vw, 128px);

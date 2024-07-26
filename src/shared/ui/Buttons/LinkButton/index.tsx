@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import styles from './styles.module.scss';
 
 interface ButtonLinkProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -19,23 +18,16 @@ const LinkButton: React.FC<ButtonLinkProps> = ({
     const buttonClass = `${styles.button} ${styles['button--' + buttonType]} ${margin || ''}`;
 
     return (
-        <Link
+        <a
+            href={to}
             className={buttonClass}
-            to={to}
             {...rest}
+            target="_blank"
+            rel="noopener noreferrer"
         >
             {text}
-        </Link>
+        </a>
     );
 };
 
 export default LinkButton;
-
-// Usage Example:
-// <LinkButton
-//   margin='mb-4'
-//   text='Click Me'
-//   to='targetSection'
-//   buttonType='filled'
-//   onClick={() => console.log('Navigating to section')}
-// />
