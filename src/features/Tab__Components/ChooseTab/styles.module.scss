@@ -1,0 +1,40 @@
+.container {
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        @apply pt-16;
+        width: 65%;
+        position: relative;
+        margin: auto;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        &__img {
+            position: relative;
+        }
+    }
+}
+
+.customButton {
+    position: absolute;
+    top: 50%;
+    z-index: 20;
+    width: clamp(25px, 2.604vw, 100px);
+    height: clamp(25px, 2.604vw, 100px);
+}
+
+.customButton.prev {
+    left: 0px;
+}
+
+.customButton.next {
+    right: 0px;
+}

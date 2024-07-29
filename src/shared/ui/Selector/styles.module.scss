@@ -1,0 +1,49 @@
+.selector {
+    height: clamp(25px, 2.604vw, 100px);
+    width: clamp(500px, 52.08vw, 2000px);
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.selectorChevron {
+    position: absolute;
+    right: 10px;
+    @apply text-white;
+    transition: 0.3s all;
+
+    &:hover {
+        @apply text-primary;
+    }
+}
+
+
+.container {
+    width: clamp(500px, 52.08vw, 2000px);
+    border-bottom: 1px solid #FFF;
+}
+
+
+.list {
+    @apply mb-4;
+}
+
+.selectorPlaceholder {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    font-weight: 500;
+}
+
+.listItem {
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(10px, 1.0416vw, 40px);
+    font-weight: 300;
+    @apply text-white;
+    transition: 0.3s all;
+
+    &:hover {
+        @apply text-primary;
+        cursor: pointer;
+    }
+}

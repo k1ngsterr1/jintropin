@@ -18,6 +18,9 @@
         justify-content: center;
         overflow: hidden;
         @apply pt-52;
+        width: 75%;
+        position: relative;
+        margin: auto;
     }
 
     &__button {
@@ -53,4 +56,20 @@
             border: 2px;
         }
     }
+}
+
+.customButton {
+    position: absolute;
+    top: 60%;
+    z-index: 20;
+    width: clamp(25px, 2.604vw, 100px);
+    height: clamp(25px, 2.604vw, 100px);
+}
+
+.customButton.prev {
+    left: 0px;
+}
+
+.customButton.next {
+    right: 0px;
 }

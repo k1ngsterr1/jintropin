@@ -6,6 +6,8 @@ import { Advantages } from '@widgets/HomePage/Advantages'
 import { Contraindications } from '@widgets/HomePage/Contraindications'
 import { VideoBlock } from '@widgets/HomePage/VideoBlock'
 import { Certificate } from '@widgets/HomePage/Сertificate'
+import { Questions } from '@widgets/HomePage/Questions'
+import { Choose } from '@widgets/HomePage/Choose'
 
 
 import styles from './styles.module.scss'
@@ -21,6 +23,8 @@ export const HomePage = () => {
             <Contraindications />
             <VideoBlock />
             <Certificate />
+            <Questions />
+            <Choose />
         </div>
     )
 }
