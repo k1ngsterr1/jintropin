@@ -1,0 +1,34 @@
+.container {
+  &__button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: clamp(15px, 1.5624vw, 60px);
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+    &__img {
+      position: relative;
+    }
+
+    &__text {
+      position: absolute;
+      @apply p-3;
+      font-family: "Unbounded", sans-serif;
+      width: 80%;
+      // left: 100px;
+      text-align: left;
+      font-size: clamp(14px, 1.45824vw, 56px);
+      display: flex;
+      gap: 10px;
+    }
+
+    &__separator {
+      border: 2px;
+    }
+  }
+}

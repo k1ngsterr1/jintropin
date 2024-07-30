@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer {
+  display: flex;
+  gap: clamp(12px, 1.24992vw, 48px);
+}
+
+.navigation {
+  display: flex;
+  gap: clamp(12px, 1.24992vw, 48px);
+  &__link {
+    font-size: clamp(8px, 0.83328vw, 32px);
+    @apply text-white;
+    font-family: "Roboto", sans-serif;
+  }
+}

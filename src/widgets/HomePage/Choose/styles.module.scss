@@ -1,21 +1,20 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    @apply bg-gray;
+  display: flex;
+  flex-direction: column;
+  @apply bg-gray;
+  @apply mt-16 pb-32;
+
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
     @apply mt-16;
 
-
-    &__heading {
-        font-size: clamp(32px, 3.33312vw, 128px);
-        width: 65%;
-        margin: auto;
-        text-align: center;
-        font-family: "Oswald", sans-serif;
-        @apply text-white;
-        @apply mt-16;
-
-        &__span {
-            @apply text-primary;
-        }
+    &__span {
+      @apply text-primary;
     }
+  }
 }

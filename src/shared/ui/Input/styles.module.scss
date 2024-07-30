@@ -1,0 +1,13 @@
+.input {
+  width: clamp(150px, 15.624vw, 600px);
+  height: clamp(25px, 2.604vw, 100px);
+  border-bottom: 2px solid #fff;
+  outline: none;
+  background: none;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(8px, 0.83328vw, 32px);
+  &::placeholder {
+    @apply text-white;
+    font-weight: 500;
+  }
+}

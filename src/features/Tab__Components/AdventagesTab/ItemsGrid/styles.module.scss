@@ -1,40 +1,6 @@
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
-
-    &__items {
-        position: relative;
-    }
-
-    &__image {
-        width: clamp(415px, 43.2264vw, 1660px);
-        height: clamp(384px, 39.99744vw, 1536px);
-    }
-
-    &__overlay {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        color: white;
-        display: flex;
-        align-items: center;
-        gap: clamp(10px, 1.0416vw, 40px);
-        width: 60%;
-    }
-
-    &__number {
-        font-family: 'Oswald', sans-serif;
-        font-weight: 700;
-        font-size: clamp(64px, 6.66624vw, 256px);
-        color: transparent;
-        -webkit-text-stroke: 2px yellow;
-        position: relative;
-    }
-
-    &__title {
-        font-family: "Unbounded", sans-serif;
-        font-size: clamp(24px, 2.49984vw, 96px);
-        font-weight: 500;
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  @apply pt-16;
 }

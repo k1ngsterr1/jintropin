@@ -1,27 +1,22 @@
-import React from 'react';
-import styles from './styles.module.scss';
+import React from "react";
+import styles from "./styles.module.scss";
 
 interface CardsI {
-    imgSrc: string;
-    buttonClass: string;
-    text: string;
-    textClass: string;
+  image: string;
+  number: string;
+  title: string;
 }
 
-export const AdvantagesCards: React.FC<CardsI> = ({
-    buttonClass,
-    imgSrc,
-    text,
-    textClass,
-    ...rest
-}) => {
-    return (
-        <div className={buttonClass}
-            {...rest}>
-            <img src={imgSrc} alt="Advantage" className={styles.card__img} />
-            <div className={textClass}>
-                <button className={styles.btn}>{text}</button>
-            </div>
+export const AdvantagesCards: React.FC<CardsI> = ({ image, number, title }) => {
+  return (
+    <div className={styles.grid}>
+      <div className={styles.grid__items}>
+        <img src={image} alt={title} className={styles.grid__image} />
+        <div className={styles.grid__overlay}>
+          <div className={styles.grid__number}>{number}</div>
+          <div className={styles.grid__title}>{title}</div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };

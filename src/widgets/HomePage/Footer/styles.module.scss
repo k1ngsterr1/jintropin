@@ -1,0 +1,16 @@
+.footer {
+  @apply pt-16 pb-16;
+  background-color: rgba(255, 255, 255, 0.05);
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 86.6%;
+    margin: auto;
+  }
+  &__logo {
+    @apply text-primary;
+    font-family: "Unbounded", sans-serif;
+    font-size: clamp(16px, 1.66656vw, 64px);
+  }
+}

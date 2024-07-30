@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
+    @apply mt-16;
+  }
+}

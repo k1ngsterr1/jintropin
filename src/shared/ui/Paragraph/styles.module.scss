@@ -1,20 +1,20 @@
 .paragraph {
-    font-size: clamp(9px, 0.93744vw, 36px);
-    font-family: "Raleway", sans-serif;
+  font-size: clamp(9px, 0.93744vw, 36px);
+  font-family: "Raleway", sans-serif;
 }
 
 .paragraph--white {
-    @extend .paragraph;
-    @apply text-white;
+  @extend .paragraph;
+  @apply text-white;
 }
 
 .paragraph--dark {
-    @extend .paragraph;
-    @apply text-dark;
+  @extend .paragraph;
+  @apply text-dark;
 }
 
 .paragraph--yellow {
-    @extend .paragraph;
-    @apply text-primary;
-    font-family: "Unbounded", sans-serif;
+  @extend .paragraph;
+  @apply text-primary;
+  font-family: "Unbounded", sans-serif;
 }

@@ -1,0 +1,19 @@
+.grid {
+  &__overlay {
+    @apply p-8;
+  }
+
+  &__title {
+    font-family: "Raleway", sans-serif;
+    @apply text-white;
+    font-size: clamp(12px, 1.24992vw, 48px);
+    @apply mt-4;
+  }
+
+  &__description {
+    font-family: "Raleway", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    @apply mt-4;
+    width: 110%;
+  }
+}

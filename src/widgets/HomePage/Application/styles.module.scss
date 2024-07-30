@@ -1,24 +1,27 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    // position: relative;
-    @apply mt-96;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @apply mt-96;
 
-    &__img {
-        width: clamp(900px, 93.744vw, 3600px);
-        margin: auto;
+  &__img {
+    width: clamp(900px, 93.744vw, 3600px);
+    position: absolute;
+    margin: auto;
+    @apply mt-44;
+  }
+
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
+    @apply mt-20;
+
+    &__span {
+      @apply text-primary;
     }
-
-    &__heading {
-        font-size: clamp(32px, 3.33312vw, 128px);
-        width: 65%;
-        margin: auto;
-        text-align: center;
-        font-family: "Oswald", sans-serif;
-        @apply text-white;
-
-        &__span {
-            @apply text-primary;
-        }
-    }
+  }
 }
