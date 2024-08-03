@@ -1,20 +1,21 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @apply mt-40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @apply mt-40;
 
-    &__text {
-        @apply text-white;
-        text-align: center;
-        font-weight: 100;
+  &__text {
+    @apply text-white;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  &__items {
+    // @apply mt-2;
+
+    &__icon {
+      @apply text-primary;
+      @apply mt-4;
     }
-
-    &__items {
-        // @apply mt-2;
-
-        &__icon {
-            @apply mt-4;
-        }
-    }
+  }
 }
