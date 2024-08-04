@@ -1,19 +1,22 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    @apply pb-28;
+  width: 86.6%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @apply pb-28;
 
-    &__heading {
-        font-size: clamp(32px, 3.33312vw, 128px);
-        width: 35%;
-        margin: auto;
-        text-align: center;
-        font-family: "Oswald", sans-serif;
-        @apply text-white;
-        @apply mt-16;
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
+    @apply mt-16;
 
-        &__span {
-            @apply text-primary;
-        }
+    &__span {
+      @apply text-primary;
     }
+  }
 }

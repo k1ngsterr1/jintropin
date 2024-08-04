@@ -70,7 +70,7 @@
 
 .button--outline {
   @extend .button;
-  border: 1.5px solid;
+  border: 2px solid;
   @apply border-primary;
   @apply text-primary;
   transition: 0.3s all;

@@ -13,12 +13,14 @@ import { Form } from "@widgets/HomePage/Form/index";
 import { Footer } from "../../widgets/HomePage/Footer/index";
 
 import styles from "./styles.module.scss";
+import { SideMenu } from "@features/SideMenu";
 
 export const HomePage = () => {
   return (
     <div className={styles.home}>
       <Header />
       <Main />
+      <SideMenu />
       <Application />
       <Usage />
       <Advantages />

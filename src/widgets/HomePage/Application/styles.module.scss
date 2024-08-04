@@ -1,8 +1,31 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/variables";
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   @apply mt-96;
+
+  @include respond-to("xl") {
+    @apply mt-20;
+  }
+
+  @include respond-to("2xl") {
+    @apply mt-48;
+  }
+
+  @include respond-to("4xl") {
+    @apply mt-80;
+  }
+
+  @include respond-to("5xl") {
+    @apply mt-96;
+  }
+
+  @include respond-to("6xl") {
+    margin-top: clamp(306px, 612 / 2560 * 100vw, 1224px);
+  }
 
   &__img {
     width: clamp(900px, 93.744vw, 3600px);

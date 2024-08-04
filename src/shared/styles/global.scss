@@ -7,4 +7,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  scrollbar-color: #fff200 transparent;
+}
+
+::selection {
+  background-color: #fff200;
+  color: #000000;
+}
+
+::-webkit-selection {
+  background-color: #fff200;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #fff200;
+  color: #000000;
+}
+
+*::-webkit-scrollbar {
+  width: clamp(8px, 0.83328vw, 32px);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #fff200;
+  border-radius: clamp(9px, 0.93744vw, 36px);
+  border: clamp(9px, 0.93744vw, 36px) solid #fff200;
 }

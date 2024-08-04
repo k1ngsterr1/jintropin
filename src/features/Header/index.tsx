@@ -6,8 +6,10 @@ import { navLinks } from "@shared/lib/content/links";
 import Button from "@shared/ui/Buttons/ReactButton";
 import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import { useHeaderHooks } from "@shared/lib/hooks/useHeaderHooks";
+import { PCBurgerButton } from "@shared/ui/Buttons/PCBurgerButton";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const Header = () => {
   const { isOpen, handleOpenMenu } = useHeaderHooks();
@@ -33,18 +35,35 @@ export const Header = () => {
       </header>
       <header className={styles.header_pc}>
         <div className={styles.header_pc__items}>
-          <a href="" className={styles.header_pc__logo}>
-            Джинтропин
-          </a>
+          <Fade>
+            <a href="/home" className={styles.header_pc__logo}>
+              Джинтропин
+            </a>
+          </Fade>
           <nav className="flex items-center gap-8">
             {navLinks.map((link) => (
-              <a href={link.href} className={styles.header_pc__link}>
-                {link.label}
-              </a>
+              <Fade delay={0.15}>
+                <a href={link.href} className={styles.header_pc__link}>
+                  {link.label}
+                </a>
+              </Fade>
             ))}
-            <ThemeSwitcher />
-            <Button text="Написать в Whatsapp" buttonType="outline" />
-            <Button text="Получить консультацию" buttonType="outline" />
+            <Fade delay={0.17}>
+              <ThemeSwitcher />
+            </Fade>
+            <Fade delay={0.19}>
+              <>
+                <Button text="Написать в Whatsapp" buttonType="outline" />
+              </>
+            </Fade>
+            <Fade delay={0.21}>
+              <>
+                <Button text="Получить консультацию" buttonType="outline" />
+              </>
+            </Fade>
+            <Fade delay={0.23}>
+              <PCBurgerButton />
+            </Fade>
           </nav>
         </div>
       </header>

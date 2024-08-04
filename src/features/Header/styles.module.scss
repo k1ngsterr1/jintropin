@@ -2,74 +2,69 @@
 @import "../../shared/styles/variables.scss";
 @import "../../shared/styles/mixins";
 
-
 .header_mob {
-    @apply bg-dark;
-    @apply p-4;
+  @apply bg-dark;
+  @apply p-4;
 
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        align-items: center;
-        width: 90%;
-    }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+  }
 
-    @include respond-to("md") {
-        display: none;
-    }
-
+  @include respond-to("md") {
+    display: none;
+  }
 }
 
 .header_pc {
-    width: 100%;
-    @apply p-6 pt-10;
+  width: 100%;
+  @apply p-6 pt-10;
 
+  &__logo {
+    @apply text-primary;
+    font-family: "Unbounded", sans-serif;
+    font-size: clamp(16px, 1.66656vw, 64px);
+  }
 
-    &__logo {
-        @apply text-primary;
-        font-family: "Unbounded", sans-serif;
-        font-size: clamp(16px, 1.66656vw, 64px);
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    font-family: "Raleway", sans-serif;
+  }
+
+  &__icon {
+    @apply text-primary;
+  }
+
+  &__link {
+    @apply text-lg;
+    @apply text-primary;
+
+    @include respond-to("lg") {
+      @apply text-xl;
     }
 
-    &__items {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: auto;
-        width: 90%;
-        font-family: "Raleway", sans-serif;
+    @include respond-to("xl") {
+      @apply text-xl;
     }
+  }
 
-    &__icon {
-        @apply text-primary;
-    }
+  @include respond-to("xs") {
+    display: none;
+  }
 
-    &__link {
-        @apply text-lg;
-        @apply text-primary;
+  @include respond-to("sm") {
+    display: none;
+  }
 
-        @include respond-to("lg") {
-            @apply text-xl;
-        }
-
-        @include respond-to("xl") {
-            @apply text-xl;
-        }
-
-
-    }
-
-    @include respond-to("xs") {
-        display: none;
-    }
-
-    @include respond-to("sm") {
-        display: none;
-    }
-
-    @include respond-to("md") {
-        @apply text-lg;
-        display: flex;
-    }
+  @include respond-to("md") {
+    @apply text-lg;
+    display: flex;
+  }
 }

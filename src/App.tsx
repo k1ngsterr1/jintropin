@@ -7,11 +7,9 @@ import {
 import { HomePage } from "@pages/HomePage/index";
 import { QuestionsPage } from "@pages/QuestionsPage";
 
-import '@shared/styles/global.scss'
-
+import "@shared/styles/global.scss";
 
 function App() {
-
   return (
     <>
       <Router>
@@ -24,7 +22,7 @@ function App() {
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
