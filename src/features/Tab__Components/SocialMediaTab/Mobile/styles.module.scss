@@ -1,0 +1,38 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  @apply mt-10;
+
+  @include respond-to("sm") {
+    @apply mt-16;
+  }
+  @include respond-to("md") {
+    @apply mt-20;
+  }
+
+  &__items {
+    display: flex;
+    width: 100%;
+    &__icon {
+      display: flex;
+      align-items: center;
+
+      //   width: clamp(10px, 4.6728vw, 40px);
+      //   height: clamp(10px, 4.6728vw, 40px);
+    }
+  }
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; // Equal space between icons
+    align-items: center; // Center align icons vertically
+  }
+  &__fade {
+    display: flex;
+    width: 70%;
+  }
+}

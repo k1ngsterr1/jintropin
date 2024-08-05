@@ -30,21 +30,4 @@
       @apply text-white;
     }
   }
-
-  &__items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 28%;
-    @apply mt-4;
-
-    &__video {
-      text-decoration: underline;
-      @apply mt-6;
-      display: flex;
-      justify-content: space-between;
-      @apply gap-4;
-      align-items: center;
-    }
-  }
 }

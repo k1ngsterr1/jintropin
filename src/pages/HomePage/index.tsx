@@ -14,24 +14,31 @@ import { Footer } from "../../widgets/HomePage/Footer/index";
 
 import styles from "./styles.module.scss";
 import { SideMenu } from "@features/SideMenu";
+import MainMobile from "@widgets/HomePage/Mobile/Main";
 
 export const HomePage = () => {
   return (
     <div className={styles.home}>
-      <Header />
-      <Main />
-      <SideMenu />
-      <Application />
-      <Usage />
-      <Advantages />
-      <Contraindications />
-      <VideoBlock />
-      <Certificate />
-      <Questions />
-      <Choose />
-      <Results />
-      <Form />
-      <Footer />
+      <div className={styles.mob}>
+        {/* <HeaderMobile /> */}
+        <MainMobile />
+      </div>
+      <div className={styles.pc}>
+        <Header />
+        <Main />
+        <SideMenu />
+        <Application />
+        <Usage />
+        <Advantages />
+        <Contraindications />
+        <VideoBlock />
+        <Certificate />
+        <Questions />
+        <Choose />
+        <Results />
+        <Form />
+        <Footer />
+      </div>
     </div>
   );
 };

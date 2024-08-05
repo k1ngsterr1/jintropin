@@ -14,32 +14,34 @@
   font-weight: 700;
   font-family: "Raleway", sans-serif;
 
-  @include respond-to("xxs") {
-    font-size: clamp(7px, 3.889vw, 28px);
+  @include respond-to("xs") {
+    width: clamp(100px, 46.727999999999994vw, 400px);
+    height: clamp(27.5px, 5.544354838709677vw, 110px);
+    font-size: clamp(7px, 3.2709599999999996vw, 28px);
   }
 
-  @include respond-to("xs") {
-    width: clamp(130px, 54.166666666666664vw, 520px);
-    height: clamp(27.5px, 11.458333333333334vw, 110px);
-    font-size: clamp(7px, 2.9166666666666665vw, 28px);
+  @include respond-to("xxs") {
+    width: clamp(115px, 53.737199999999994vw, 460px);
+    height: clamp(28px, 13.083839999999999vw, 112px);
+    font-size: clamp(9px, 4.20552vw, 36px);
   }
 
   @include respond-to("sm") {
-    width: clamp(130px, 33.854166666666664vw, 520px);
-    height: clamp(27.5px, 7.161458333333333vw, 110px);
+    width: clamp(130px, 26.20967741935484vw, 520px);
+    height: clamp(27.5px, 5.544354838709677vw, 110px);
     font-size: clamp(7px, 1.8229166666666667vw, 28px);
   }
 
   @include respond-to("md") {
-    width: clamp(130px, 26.20967741935484vw, 520px);
-    height: clamp(27.5px, 5.544354838709677vw, 110px);
-    font-size: clamp(7px, 1.4112903225806452vw, 28px);
+    width: clamp(145px, 67.7556vw, 580px);
+    height: clamp(25px, 11.681999999999999vw, 100px);
+    font-size: clamp(10px, 4.6728vw, 40px);
   }
 
   @include respond-to("lg") {
-    width: clamp(115px, 16.912vw, 460px);
-    height: clamp(25px, 3.676vw, 100px);
-    font-size: clamp(7px, 1.1666666666666667vw, 28px);
+    width: clamp(150px, 70.092vw, 600px);
+    height: clamp(30px, 14.0184vw, 120px);
+    font-size: clamp(9px, 4.20552vw, 36px);
   }
 
   @include respond-to("xl") {
