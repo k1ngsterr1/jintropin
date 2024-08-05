@@ -15,6 +15,7 @@ import { Footer } from "../../widgets/HomePage/Footer/index";
 import styles from "./styles.module.scss";
 import { SideMenu } from "@features/SideMenu";
 import MainMobile from "@widgets/HomePage/Mobile/Main";
+import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
 
 export const HomePage = () => {
   return (
@@ -22,6 +23,7 @@ export const HomePage = () => {
       <div className={styles.mob}>
         {/* <HeaderMobile /> */}
         <MainMobile />
+        <ApplicationMobile />
       </div>
       <div className={styles.pc}>
         <Header />

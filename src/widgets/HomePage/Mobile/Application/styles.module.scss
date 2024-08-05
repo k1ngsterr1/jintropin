@@ -1,0 +1,25 @@
+.application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__heading {
+    width: 80%;
+    color: white;
+    font-size: clamp(15px, 7.0092vw, 60px);
+    line-height: clamp(20px, 9.3456vw, 80px);
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+
+    margin-top: clamp(30px, 14.0184vw, 120px);
+
+    &__span {
+      color: #fff200;
+    }
+  }
+  &__container {
+    margin-top: clamp(28px, 13.083839999999999vw, 112px);
+  }
+}
