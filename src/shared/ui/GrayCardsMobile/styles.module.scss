@@ -4,22 +4,15 @@
 .grid {
   &__overlay {
     @apply p-8;
-
-    @include respond-to("xl") {
-      @apply p-4;
-    }
-
-    @include respond-to("2xl") {
-      @apply p-4;
-    }
-
-    @include respond-to("3xl") {
-      @apply p-8;
-    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__image {
-    @include respond-to("xs") {
+    @include respond-to("md") {
+      width: clamp(45px, 21.0276vw, 180px);
+      height: clamp(45px, 21.0276vw, 180px);
     }
     @include respond-to("xl") {
       width: clamp(30px, 60 / 1200 * 100vw, 120px);
@@ -33,10 +26,16 @@
   }
 
   &__title {
+    width: 85%;
     font-family: "Raleway", sans-serif;
     @apply text-white;
-    font-size: clamp(12px, 1.24992vw, 48px);
+    font-size: clamp(14px, 6.541919999999999vw, 56px);
+
+    @include respond-to("md") {
+      @apply mt-10;
+    }
     @apply mt-4;
+    text-align: center;
   }
 
   &__description {
@@ -44,23 +43,20 @@
     color: rgba(255, 255, 255, 0.8);
     @apply text-pretty;
     @apply mt-4;
+    text-align: center;
+    width: 90%;
+    font-size: clamp(7px, 3.2709599999999996vw, 28px);
+
+    @include respond-to("xxs") {
+      font-size: clamp(9px, 4.20552vw, 36px);
+    }
+    @include respond-to("md") {
+      @apply mt-12;
+      font-size: clamp(9px, 4.20552vw, 36px);
+    }
 
     @include respond-to("xl") {
-      font-size: 12px;
-    }
-
-    @include respond-to("2xl") {
-      width: 100%;
-      font-size: 13px;
-    }
-
-    @include respond-to("5xl") {
-      font-size: clamp(8px, 16 / 1920 * 100vw, 32px);
-    }
-
-    @include respond-to("6xl") {
-      width: 100%;
-      font-size: clamp(8px, 16 / 2560 * 100vw, 32px);
+      font-size: 14px;
     }
   }
 }

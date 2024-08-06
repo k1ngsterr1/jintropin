@@ -39,7 +39,6 @@
     @include respond-to("md") {
       bottom: 15px;
       left: 20px;
-      gap: clamp(7px, 3.2709599999999996vw, 28px);
     }
     @include respond-to("lg") {
       bottom: 25px;
