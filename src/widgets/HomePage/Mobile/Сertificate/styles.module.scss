@@ -1,0 +1,20 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    font-size: clamp(15px, 7.0092vw, 60px);
+    line-height: clamp(20px, 9.3456vw, 80px);
+    font-weight: 700;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
+    margin-top: clamp(30px, 14.0184vw, 120px);
+  }
+}

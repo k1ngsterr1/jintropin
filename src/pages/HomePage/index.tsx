@@ -8,7 +8,7 @@ import { VideoBlock } from "@widgets/HomePage/VideoBlock";
 import { Certificate } from "@widgets/HomePage/Сertificate";
 import { Questions } from "@widgets/HomePage/Questions";
 import { Choose } from "@widgets/HomePage/Choose";
-import { Results } from "@widgets/HomePage/Results/index";
+// import { Results } from "@widgets/HomePage/Results/index";
 import { Form } from "@widgets/HomePage/Form/index";
 import { Footer } from "../../widgets/HomePage/Footer/index";
 
@@ -18,6 +18,7 @@ import MainMobile from "@widgets/HomePage/Mobile/Main";
 import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
 import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
 import { ContraindicationsMobile } from "@widgets/HomePage/Mobile/Contraindications";
+import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
 
 export const HomePage = () => {
   return (
@@ -28,7 +29,7 @@ export const HomePage = () => {
         <ApplicationMobile />
         <AdvantagesMobile />
         <ContraindicationsMobile />
-        <Certificate />
+        <CertificateMobile />
       </div>
       <div className={styles.pc}>
         <Header />
@@ -42,7 +43,7 @@ export const HomePage = () => {
         <Certificate />
         <Questions />
         <Choose />
-        <Results />
+        {/* <Results /> */}
         <Form />
         <Footer />
       </div>
