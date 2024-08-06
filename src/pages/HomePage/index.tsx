@@ -19,6 +19,7 @@ import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
 import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
 import { ContraindicationsMobile } from "@widgets/HomePage/Mobile/Contraindications";
 import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
+import FormMobile from "@widgets/HomePage/Mobile/Form";
 
 export const HomePage = () => {
   return (
@@ -30,6 +31,7 @@ export const HomePage = () => {
         <AdvantagesMobile />
         <ContraindicationsMobile />
         <CertificateMobile />
+        <FormMobile />
       </div>
       <div className={styles.pc}>
         <Header />
