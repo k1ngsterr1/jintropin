@@ -3,6 +3,7 @@ import {
   SocialButtonBigger,
   SocialButtonWithSize,
 } from "@shared/ui/Buttons/SocialButton";
+import { SocialLink } from "@shared/ui/Buttons/SocialLink";
 import {
   FaInstagram,
   FaWhatsapp,
@@ -81,6 +82,34 @@ export const socialItems: { text: string; icons: React.ReactNode[] }[] = [
         key="telegram"
       />,
       <SocialButtonBigger
+        icon={FaYoutube}
+        href="https://www.youtube.com"
+        key="youtube"
+      />,
+    ],
+  },
+];
+
+export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
+  {
+    text: "Соц сети",
+    icons: [
+      <SocialLink
+        icon={FaInstagram}
+        href="https://www.instagram.com"
+        key="instagram"
+      />,
+      <SocialLink
+        icon={FaWhatsapp}
+        href="https://www.whatsapp.com"
+        key="whatsapp"
+      />,
+      <SocialLink
+        icon={FaTelegramPlane}
+        href="https://t.me/jintropine_channel"
+        key="telegram"
+      />,
+      <SocialLink
         icon={FaYoutube}
         href="https://www.youtube.com"
         key="youtube"

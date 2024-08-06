@@ -1,9 +1,22 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.nav_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
 
+.iconContainer_mobile {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .iconContainer {
   display: flex;
   gap: clamp(12px, 1.24992vw, 48px);
@@ -11,10 +24,19 @@
 
 .navigation {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: clamp(12px, 1.24992vw, 48px);
   &__link {
-    font-size: clamp(8px, 0.83328vw, 32px);
+    font-size: clamp(9px, 4.20552vw, 36px);
     @apply text-white;
     font-family: "Roboto", sans-serif;
+    @include respond-to("xl") {
+      font-size: clamp(8px, 0.83328vw, 32px);
+    }
+  }
+  @include respond-to("xl") {
+    flex-direction: row;
+    align-items: start;
   }
 }
