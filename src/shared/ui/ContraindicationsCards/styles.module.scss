@@ -1,7 +1,13 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .grid {
   &__image {
-    width: clamp(16px, 1.66656vw, 64px);
-    height: clamp(16px, 1.66656vw, 64px);
+    width: clamp(8px, 3.73824vw, 32px);
+    height: clamp(8px, 3.73824vw, 32px);
+    @include respond-to("xl") {
+      width: clamp(16px, 1.66656vw, 64px);
+      height: clamp(16px, 1.66656vw, 64px);
+    }
   }
 
   &__overlay {
@@ -13,7 +19,13 @@
   &__title {
     font-family: "Raleway", sans-serif;
     @apply text-primary;
-    font-size: clamp(12px, 1.24992vw, 48px);
+    font-size: clamp(8px, 3.73824vw, 32px);
+    @include respond-to("md") {
+      font-size: clamp(7px, 3.2709599999999996vw, 28px);
+    }
+    @include respond-to("xl") {
+      font-size: clamp(12px, 1.24992vw, 48px);
+    }
   }
 
   &__description {
@@ -21,6 +33,12 @@
     color: rgba(255, 255, 255, 0.8);
     @apply mt-4;
     width: 95%;
-    font-size: clamp(9.5px, 0.9895200000000001vw, 38px);
+    font-size: clamp(7px, 3.2709599999999996vw, 28px);
+    @include respond-to("md") {
+      font-size: clamp(6px, 2.80368vw, 24px);
+    }
+    @include respond-to("xl") {
+      font-size: clamp(9.5px, 0.9895200000000001vw, 38px);
+    }
   }
 }

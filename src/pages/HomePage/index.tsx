@@ -17,6 +17,7 @@ import { SideMenu } from "@features/SideMenu";
 import MainMobile from "@widgets/HomePage/Mobile/Main";
 import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
 import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
+import { ContraindicationsMobile } from "@widgets/HomePage/Mobile/Contraindications";
 
 export const HomePage = () => {
   return (
@@ -26,6 +27,8 @@ export const HomePage = () => {
         <MainMobile />
         <ApplicationMobile />
         <AdvantagesMobile />
+        <ContraindicationsMobile />
+        <Certificate />
       </div>
       <div className={styles.pc}>
         <Header />

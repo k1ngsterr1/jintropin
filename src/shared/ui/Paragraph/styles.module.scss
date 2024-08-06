@@ -1,6 +1,14 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .paragraph {
-  font-size: clamp(9px, 0.93744vw, 36px);
+  font-size: clamp(6px, 2.80368vw, 24px);
   font-family: "Raleway", sans-serif;
+  @include respond-to("md") {
+    font-size: clamp(7px, 3.2709599999999996vw, 28px);
+  }
+  @include respond-to("xl") {
+    font-size: clamp(9px, 0.93744vw, 36px);
+  }
 }
 
 .paragraph--white {
