@@ -7,6 +7,7 @@ import {
 
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 
 export const FooterMobile = () => {
   return (
@@ -18,6 +19,7 @@ export const FooterMobile = () => {
         <NavigationTab />
         <SocialTabMobile />
       </div>
+      <img src={DJIN} alt="img" className={styles.footer__img} />
     </footer>
   );
 };

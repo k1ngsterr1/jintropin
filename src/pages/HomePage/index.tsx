@@ -21,12 +21,13 @@ import { ContraindicationsMobile } from "@widgets/HomePage/Mobile/Contraindicati
 import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
 import FormMobile from "@widgets/HomePage/Mobile/Form";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
+import { HeaderMobile } from "@features/Header/Mobile/Header";
 
 export const HomePage = () => {
   return (
     <div className={styles.home}>
       <div className={styles.mob}>
-        {/* <HeaderMobile /> */}
+        <HeaderMobile />
         <MainMobile />
         <ApplicationMobile />
         <AdvantagesMobile />

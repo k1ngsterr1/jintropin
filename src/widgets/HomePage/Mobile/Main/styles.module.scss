@@ -21,9 +21,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: clamp(55px, 25.7004vw, 220px);
+    padding-top: clamp(50px, 23.363999999999997vw, 200px);
     @include respond-to("md") {
-      padding-top: clamp(80px, 37.3824vw, 320px);
+      padding-top: clamp(55px, 25.7004vw, 220px);
     }
     &__item {
       display: flex;

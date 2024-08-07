@@ -2,6 +2,7 @@ import React from "react";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const Questions = () => {
   const handleRedirect = () => {
@@ -9,7 +10,9 @@ export const Questions = () => {
   };
   return (
     <div className={styles.container}>
-      <span className={styles.container__heading}>ВОПРОСЫ</span>
+      <span className={styles.container__heading}>
+        <Fade>ВОПРОСЫ</Fade>
+      </span>
       <LinkButton
         margin="mt-10"
         onClick={handleRedirect}
