@@ -22,6 +22,9 @@
     align-items: center;
     flex-direction: column;
     padding-top: clamp(55px, 25.7004vw, 220px);
+    @include respond-to("md") {
+      padding-top: clamp(80px, 37.3824vw, 320px);
+    }
     &__item {
       display: flex;
       align-items: center;

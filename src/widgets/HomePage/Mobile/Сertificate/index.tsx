@@ -3,11 +3,14 @@ import Paragraph from "@shared/ui/Paragraph";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const CertificateMobile = () => {
   return (
     <div className={styles.container}>
-      <h6 className={styles.container__heading}>СЕРТИФИКАТЫ КАЧЕСТВА</h6>
+      <h6 className={styles.container__heading}>
+        <Fade>СЕРТИФИКАТЫ КАЧЕСТВА</Fade>
+      </h6>
       <Paragraph
         align="text-center"
         paragraphType="white"

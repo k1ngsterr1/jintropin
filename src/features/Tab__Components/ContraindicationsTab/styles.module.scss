@@ -35,3 +35,13 @@
     gap: clamp(4px, 0.41664vw, 16px);
   }
 }
+.animation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include respond-to("xl") {
+    display: block;
+    width: inherit;
+  }
+}

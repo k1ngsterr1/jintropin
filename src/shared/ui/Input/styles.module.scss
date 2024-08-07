@@ -20,5 +20,12 @@
     width: clamp(150px, 15.624vw, 600px);
     height: clamp(25px, 2.604vw, 100px);
     font-size: clamp(8px, 0.83328vw, 32px);
+    @apply p-4;
   }
+}
+.animation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

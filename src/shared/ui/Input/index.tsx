@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   margin?: string;
@@ -19,13 +20,15 @@ const Input: React.FC<InputProps> = ({
   const inputStyle = textAlign ? { textAlign } : {};
 
   return (
-    <input
-      className={inputClass}
-      style={inputStyle}
-      type={type}
-      placeholder={placeholder}
-      {...rest}
-    />
+    <Fade className={styles.animation}>
+      <input
+        className={inputClass}
+        style={inputStyle}
+        type={type}
+        placeholder={placeholder}
+        {...rest}
+      />
+    </Fade>
   );
 };
 

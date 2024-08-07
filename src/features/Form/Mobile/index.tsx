@@ -4,12 +4,13 @@ import Input from "@shared/ui/Input/index";
 import Button from "@shared/ui/Buttons/ReactButton/index";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const FormComponentMobile = () => {
   return (
     <div className={styles.container}>
       <p className={styles.container__paragraph}>
-        Отправьте заявку чтобы связаться с нами
+        <Fade>Отправьте заявку чтобы связаться с нами</Fade>
       </p>
       <Input placeholder="Ваше Имя" textAlign="center" margin="mt-10" />
       <Input placeholder="Номер Телефона" textAlign="center" margin="mt-10" />

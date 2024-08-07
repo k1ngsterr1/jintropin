@@ -6,12 +6,13 @@ import {
 } from "../../../shared/lib/content/SocialTabContent/items";
 
 import styles from "./styles.module.scss";
+import { Fade } from "react-awesome-reveal";
 
 export const NavigationTab: React.FC = () => (
   <nav className={styles.navigation}>
     {navigation.map((link) => (
       <a href={link.href} className={styles.navigation__link}>
-        {link.label}
+        <Fade>{link.label}</Fade>
       </a>
     ))}
   </nav>
@@ -22,7 +23,9 @@ export const SocialTab: React.FC = () => (
     {socialItems.map((item, index) => (
       <div key={index} className={styles.iconContainer}>
         {item.icons.map((icon, idx) => (
-          <div key={idx}>{icon}</div>
+          <div key={idx}>
+            <Fade>{icon}</Fade>
+          </div>
         ))}
       </div>
     ))}
@@ -34,7 +37,9 @@ export const SocialTabMobile: React.FC = () => (
     {adaptedItems.map((item, index) => (
       <div key={index} className={styles.iconContainer_mobile}>
         {item.icons.map((icon, idx) => (
-          <div key={idx}>{icon}</div>
+          <div key={idx}>
+            <Fade>{icon}</Fade>
+          </div>
         ))}
       </div>
     ))}
