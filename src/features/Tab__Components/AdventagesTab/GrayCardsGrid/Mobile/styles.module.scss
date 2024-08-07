@@ -35,5 +35,9 @@
       width: clamp(100px, 46.727999999999994vw, 400px);
       height: clamp(200px, 93.45599999999999vw, 800px);
     }
+    @include respond-to("xl") {
+      width: clamp(155.5px, 16.19688vw, 622px);
+      height: clamp(210px, 21.8736vw, 840px);
+    }
   }
 }

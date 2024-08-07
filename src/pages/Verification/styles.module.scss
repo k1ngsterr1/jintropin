@@ -1,0 +1,35 @@
+@import "@shared/styles/variables.scss";
+@import "@shared/styles/mixins";
+.certificate {
+  position: relative;
+  .mob {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  @include respond-to("xl") {
+    .mob {
+      display: none;
+    }
+    .pc {
+      display: block;
+    }
+  }
+  .block {
+    height: clamp(200px, 93.45599999999999vw, 800px);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: clamp(40px, 18.6912vw, 160px);
+    @include respond-to("md") {
+      height: clamp(250px, 116.82vw, 1000px);
+    }
+    @include respond-to("xl") {
+      height: clamp(350px, 36.456vw, 1400px);
+    }
+  }
+}

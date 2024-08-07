@@ -1,0 +1,63 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.verification {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @apply pt-32;
+  @apply pb-32;
+
+  &__heading {
+    font-size: clamp(15px, 7.0092vw, 60px);
+    line-height: clamp(20px, 9.3456vw, 80px);
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  &__paragraph {
+    text-align: center;
+    font-size: clamp(16px, 1.66656vw, 64px);
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    @include respond-to("md") {
+      width: 70%;
+      font-size: clamp(8px, 3.73824vw, 32px);
+    }
+  }
+  &__instructions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(12px, 1.24992vw, 48px);
+    &__point {
+      color: white;
+      font-size: clamp(6px, 2.80368vw, 24px);
+      font-family: "Unbounded", sans-serif;
+      text-align: center;
+      width: 100%;
+      @include respond-to("md") {
+        width: 70%;
+      }
+    }
+  }
+
+  &__button {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: clamp(30px, 3.1248vw, 120px);
+    @include respond-to("md") {
+      gap: clamp(10px, 4.6728vw, 40px);
+    }
+    @apply p-12;
+  }
+}

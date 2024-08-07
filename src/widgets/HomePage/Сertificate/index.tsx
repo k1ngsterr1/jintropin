@@ -1,4 +1,3 @@
-import React from "react";
 import Paragraph from "@shared/ui/Paragraph";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 
@@ -15,7 +14,7 @@ export const Certificate = () => {
         align="text-center"
         paragraphType="white"
         text="Джинтропин соответствует самым высоким стандартам качества. Это подтверждается следующими документами:"
-        width="25%"
+        width="40%"
         margin="mt-4"
         lineHeight="clamp(13.5px,1.40616vw,54px)"
       />

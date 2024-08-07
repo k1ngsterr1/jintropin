@@ -13,7 +13,7 @@ export const links = [
   },
   {
     text: "Основное",
-    href: "/main",
+    href: "/home",
   },
   {
     text: "Контакты",
@@ -21,6 +21,6 @@ export const links = [
   },
   {
     text: "Противопоказания",
-    href: "/contradictions",
+    href: "/contraindications",
   },
 ];

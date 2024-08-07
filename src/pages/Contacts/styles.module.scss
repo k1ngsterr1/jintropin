@@ -1,0 +1,37 @@
+@import "../../shared/styles/variables.scss";
+@import "../../shared/styles/mixins";
+.contacts {
+  position: relative;
+  .mob {
+    display: block;
+
+    &__footer {
+      @apply mt-20;
+    }
+  }
+
+  .pc {
+    display: none;
+  }
+
+  @include respond-to("xl") {
+    .mob {
+      display: none;
+    }
+    .pc {
+      display: block;
+    }
+  }
+  .block {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @include respond-to("md") {
+      margin-top: 60px;
+      margin-bottom: 100px;
+    }
+    @include respond-to("xl") {
+      margin-top: 60px;
+      margin-bottom: 80px;
+    }
+  }
+}

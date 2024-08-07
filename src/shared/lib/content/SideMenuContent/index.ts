@@ -1,27 +1,31 @@
 const sideMenuContent = [
   {
     name: "Отзывы",
-    href: "#",
+    href: "/feedback",
   },
   {
     name: "Преимущества",
-    href: "#",
+    href: "/advantages",
   },
   {
     name: "Сертификат",
-    href: "#",
+    href: "/certificate",
   },
   {
     name: "Основное",
-    href: "#",
+    href: "/home",
   },
   {
     name: "Контакты",
-    href: "#",
+    href: "/contacts",
   },
   {
     name: "Противопоказания",
-    href: "#",
+    href: "/contraindications",
+  },
+  {
+    name: "Проверка",
+    href: "/verification",
   },
 ];
 

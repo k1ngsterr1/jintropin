@@ -1,0 +1,55 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.verification {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  &__paragraph {
+    width: 40%;
+    text-align: center;
+    font-size: clamp(16px, 1.66656vw, 64px);
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    @include respond-to("2xl") {
+      width: 50%;
+    }
+  }
+  &__instructions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: clamp(12px, 1.24992vw, 48px);
+    &__point {
+      color: white;
+      font-size: clamp(12px, 1.24992vw, 48px);
+      font-family: "Unbounded", sans-serif;
+      text-align: center;
+      width: 80%;
+    }
+  }
+
+  &__button {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: clamp(30px, 3.1248vw, 120px);
+    @apply p-44;
+    width: 90%;
+  }
+}

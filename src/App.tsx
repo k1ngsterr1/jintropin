@@ -8,6 +8,11 @@ import { HomePage } from "@pages/HomePage/index";
 import { QuestionsPage } from "@pages/QuestionsPage";
 
 import "@shared/styles/global.scss";
+import AdvantagesPage from "@pages/Advantages";
+import ContraindicationsPage from "@pages/Contraindications";
+import CertificatePage from "@pages/Certificate";
+import VerificationPage from "@pages/Verification";
+import ContactsPage from "@pages/Contacts";
 
 function App() {
   return (
@@ -19,6 +24,14 @@ function App() {
           <Route path="/index.shtml" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/questions" element={<QuestionsPage />} />
+          <Route path="/advantages" element={<AdvantagesPage />} />
+          <Route
+            path="/contraindications"
+            element={<ContraindicationsPage />}
+          />
+          <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/certificate" element={<CertificatePage />} />
+          <Route path="/verification" element={<VerificationPage />} />
         </Routes>
       </Router>
     </>

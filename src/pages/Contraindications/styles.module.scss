@@ -1,0 +1,25 @@
+@import "../../shared/styles/variables.scss";
+@import "../../shared/styles/mixins";
+.contraindications {
+  position: relative;
+  .mob {
+    display: block;
+
+    &__footer {
+      @apply mt-20;
+    }
+  }
+
+  .pc {
+    display: none;
+  }
+
+  @include respond-to("xl") {
+    .mob {
+      display: none;
+    }
+    .pc {
+      display: block;
+    }
+  }
+}

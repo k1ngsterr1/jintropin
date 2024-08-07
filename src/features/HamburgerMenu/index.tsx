@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 import { links } from "@shared/lib/content/Header/Menu";
@@ -61,7 +60,7 @@ export const HamburgerMenu: React.FC<Props> = ({ isActive, handleClick }) => {
                     : styles.menu__nav__list__link
                 }`}
               >
-                <Fade delay={0.1 * (index + 1)}>{item.text}</Fade>
+                <Fade>{item.text}</Fade>
               </Link>
             </li>
           ))}

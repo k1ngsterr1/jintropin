@@ -8,6 +8,7 @@ import { closeMenu } from "@redux/slices/sideMenuSlice";
 import sideMenuContent from "@shared/lib/content/SideMenuContent";
 
 import styles from "./styles.module.scss";
+import { Link } from "react-router-dom";
 
 export const SideMenu = () => {
   const { sideMenuRef } = useContext(RefContext);
@@ -28,13 +29,13 @@ export const SideMenu = () => {
       />
       <div className={styles.side_menu__content}>
         {sideMenuContent.map((link, index) => (
-          <a
+          <Link
             className={styles.side_menu__content__link}
-            href={link.href}
+            to={link.href}
             key={index}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
       </div>
     </aside>
