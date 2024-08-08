@@ -4,14 +4,18 @@ import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 
 export const Application = () => {
+  const { t } = useTranslation();
   return (
     <div className={styles.container}>
       <Fade className="w-full">
         <h2 className={styles.container__heading}>
-          ОБЛАСТИ ПРИМЕНЕНИЯ{" "}
-          <span className={styles.container__heading__span}>ДЖИНТРОПИНА</span>
+          {t("application-pc.heading1")}{" "}
+          <span className={styles.container__heading__span}>
+            {t("application-pc.heading2")}
+          </span>
         </h2>
       </Fade>
       <img src={DJIN} alt="djin" className={styles.container__img} />

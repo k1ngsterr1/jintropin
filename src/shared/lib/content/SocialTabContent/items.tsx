@@ -11,28 +11,59 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-export const tabItems: { text: string; icons: React.ReactNode[] }[] = [
-  {
-    text: "Соц сети",
-    icons: [
-      <SocialButton
-        icon={FaInstagram}
-        href="https://www.instagram.com"
-        key="instagram"
-      />,
-      <SocialButton
-        icon={FaWhatsapp}
-        href="https://www.whatsapp.com"
-        key="whatsapp"
-      />,
-      <SocialButton
-        icon={FaTelegramPlane}
-        href="https://t.me/jintropine_channel"
-        key="telegram"
-      />,
-    ],
-  },
-];
+export type Language = "en" | "ru";
+
+interface TabItem {
+  text: string;
+  icons: React.ReactNode[];
+}
+
+export const tabItems: Record<Language, TabItem[]> = {
+  ru: [
+    {
+      text: "Соц сети",
+      icons: [
+        <SocialButton
+          icon={FaInstagram}
+          href="https://www.instagram.com"
+          key="instagram"
+        />,
+        <SocialButton
+          icon={FaWhatsapp}
+          href="https://www.whatsapp.com"
+          key="whatsapp"
+        />,
+        <SocialButton
+          icon={FaTelegramPlane}
+          href="https://t.me/jintropine_channel"
+          key="telegram"
+        />,
+      ],
+    },
+  ],
+  en: [
+    {
+      text: "Social Media",
+      icons: [
+        <SocialButton
+          icon={FaInstagram}
+          href="https://www.instagram.com"
+          key="instagram"
+        />,
+        <SocialButton
+          icon={FaWhatsapp}
+          href="https://www.whatsapp.com"
+          key="whatsapp"
+        />,
+        <SocialButton
+          icon={FaTelegramPlane}
+          href="https://t.me/jintropine_channel"
+          key="telegram"
+        />,
+      ],
+    },
+  ],
+};
 
 export const getTabItemsMobile = (size: number) => {
   return [

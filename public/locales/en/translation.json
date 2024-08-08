@@ -4,13 +4,15 @@
     "whatsapp_btn": "Write on Whatsapp",
     "consultation_btn": "Get a consultation"
   },
-  "side-menu": {
-    "feedback": "Feedback",
-    "advantages": "Advantages",
-    "certificate": "Certificate",
-    "home": "Main",
-    "contacts": "Contacts",
-    "contraindications": "Contraindications",
-    "verification": "Verification"
+  "main-pc": {
+    "heading1": "JINTROPIN 10 ME - THE BEST",
+    "heading2": "GROWTH HORMONE",
+    "paragraph": "Jintropin is successfully used by athletes all over the world. With the help of growth hormone, you can build muscle mass without rebound effect, burn fat, increase strength and endurance, and strengthen bones, ligaments, and immunity.",
+    "apply": "Submit an application",
+    "media": "Social media"
+  },
+  "application-pc": {
+    "heading1": "APPLICATION AREAS OF",
+    "heading2": "JINTROPIN"
   }
 }

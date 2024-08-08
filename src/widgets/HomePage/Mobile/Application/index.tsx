@@ -2,7 +2,12 @@ import { AdvantagesCards } from "@shared/ui/AdvantagesCards";
 import styles from "./styles.module.scss";
 import { items } from "@shared/lib/content/AdvantagesCardsContent";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
+import { Language } from "i18n";
 const ApplicationMobile = () => {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language as Language;
+  const content = items[currentLanguage] || items.en;
   return (
     <section className={styles.application}>
       <Fade className={styles.application__animation} delay={0.3}>
@@ -12,7 +17,7 @@ const ApplicationMobile = () => {
         </h2>
       </Fade>
       <div className={styles.application__container}>
-        {items.map((item, index) => (
+        {content.map((item, index) => (
           <AdvantagesCards
             key={index}
             image={item.image}

@@ -5,11 +5,12 @@ import { RefContext } from "@shared/lib/contexts/context";
 import { useSideMenuAnimation } from "@shared/lib/animations/useSideMenuAnimation";
 import { useAppDispatch } from "@redux/hooks";
 import { closeMenu } from "@redux/slices/sideMenuSlice";
-import sideMenuContent, { Language } from "@shared/lib/content/SideMenuContent";
+import sideMenuContent from "@shared/lib/content/SideMenuContent";
 
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Language } from "i18n";
 
 export const SideMenu = () => {
   const { sideMenuRef } = useContext(RefContext);
@@ -23,7 +24,6 @@ export const SideMenu = () => {
   };
   const currentLanguage = i18n.language as Language;
 
-  // Select the correct menu array based on the current language
   const content = sideMenuContent[currentLanguage] || sideMenuContent.en;
   return (
     <aside className={styles.side_menu} ref={sideMenuRef}>

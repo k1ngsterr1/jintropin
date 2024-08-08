@@ -5,8 +5,10 @@ import { SocialMediaTab } from "@features/Tab__Components/SocialMediaTab";
 import { Fade } from "react-awesome-reveal";
 
 import styles from "./styles.module.scss";
+import { useTranslation } from "react-i18next";
 
 export const Main = () => {
+  const { t } = useTranslation();
   return (
     <>
       <main className={styles.container}>
@@ -16,15 +18,15 @@ export const Main = () => {
           <Fade>
             <h1 className={styles.container__heading}>
               <span className={styles.container__heading__span}>
-                ДЖИНТРОПИН 10 МЕ - ЛУЧШИЙ{" "}
+                {t("main-pc.heading1")}{" "}
               </span>{" "}
-              <span className="text-primary">ГОРМОН РОСТА</span>
+              <span className="text-primary">{t("main-pc.heading2")}</span>
             </h1>
           </Fade>
           <Fade delay={0.2}>
             <Paragraph
               paragraphType="white"
-              text="Джинтропин успешно применяют спортсмены по всему миру. При помощи гормона роста Вы сможете нарастить мышечную массу без эффекта отката, сжечь жир, увеличить силу и выносливость, укрепить кости, связки и иммунитет."
+              text={`${t("main-pc.paragraph")}`}
               width="35%"
               margin="mt-4"
               lineHeight="clamp(13.5px,1.40616vw,54px)"
@@ -33,7 +35,7 @@ export const Main = () => {
           <Fade delay={0.3}>
             <div className={styles.container__items}>
               <Button
-                text="Оставить заявку"
+                text={`${t("main-pc.apply")}`}
                 buttonType="outline"
                 margin="mt-4"
               />
