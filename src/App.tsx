@@ -13,6 +13,7 @@ import ContraindicationsPage from "@pages/Contraindications";
 import CertificatePage from "@pages/Certificate";
 import VerificationPage from "@pages/Verification";
 import ContactsPage from "@pages/Contacts";
+import FeedbackPage from "@pages/Feedback";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/certificate" element={<CertificatePage />} />
           <Route path="/verification" element={<VerificationPage />} />
+          <Route path="/feedback" element={<FeedbackPage />} />
         </Routes>
       </Router>
     </>

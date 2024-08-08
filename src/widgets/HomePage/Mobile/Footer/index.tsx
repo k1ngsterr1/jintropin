@@ -1,5 +1,3 @@
-import React from "react";
-import { ScrollLink } from "react-scroll";
 import {
   NavigationTab,
   SocialTabMobile,
@@ -8,14 +6,15 @@ import {
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
 import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
+import { Link } from "react-router-dom";
 
 export const FooterMobile = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-        <a href="" className={styles.footer__logo}>
+        <Link to="/home" className={styles.footer__logo}>
           <Fade>Джинтропин</Fade>
-        </a>
+        </Link>
         <NavigationTab />
         <SocialTabMobile />
       </div>

@@ -1,0 +1,45 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @apply pt-24;
+  @include respond-to("3xl") {
+    @apply pt-52;
+  }
+  &__animation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-size: clamp(15px, 7.0092vw, 60px);
+    line-height: clamp(20px, 9.3456vw, 80px);
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    color: white;
+  }
+  &__swiper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: clamp(400px, 41.664vw, 1600px);
+  }
+
+  @include respond-to("xl") {
+    &__heading {
+      font-size: clamp(32px, 3.33312vw, 128px);
+      font-weight: 700;
+      font-family: "Oswald", sans-serif;
+      text-align: center;
+      color: white;
+    }
+  }
+}
