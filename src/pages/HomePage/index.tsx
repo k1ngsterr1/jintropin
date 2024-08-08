@@ -44,7 +44,7 @@ export const HomePage = () => {
         <Main />
         <SideMenu />
         <Application />
-        <Usage />
+        {/* <Usage /> */}
         <Advantages />
         <Contraindications />
         <VideoBlock />

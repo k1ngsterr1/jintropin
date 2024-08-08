@@ -14,5 +14,14 @@
   "application-pc": {
     "heading1": "APPLICATION AREAS OF",
     "heading2": "JINTROPIN"
+  },
+  "advantages-pc": {
+    "heading1": "ADVANTAGES OF",
+    "heading2": "JINTROPIN"
+  },
+  "contraindications-pc": {
+    "heading": "CONTRAINDICATIONS",
+    "paragraph": "You can find medical contraindications in the instructions:",
+    "contact": "Contact us"
   }
 }
