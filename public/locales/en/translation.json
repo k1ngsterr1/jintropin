@@ -1,5 +1,16 @@
 {
-  "header": {
-    "logo": "JINTROPIN"
+  "header-pc": {
+    "logo": "JINTROPIN",
+    "whatsapp_btn": "Write on Whatsapp",
+    "consultation_btn": "Get a consultation"
+  },
+  "side-menu": {
+    "feedback": "Feedback",
+    "advantages": "Advantages",
+    "certificate": "Certificate",
+    "home": "Main",
+    "contacts": "Contacts",
+    "contraindications": "Contraindications",
+    "verification": "Verification"
   }
 }

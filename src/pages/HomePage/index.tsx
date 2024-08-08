@@ -23,6 +23,7 @@ import FormMobile from "@widgets/HomePage/Mobile/Form";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
 import { ChooseMobile } from "@widgets/HomePage/Mobile/Choose";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 
 export const HomePage = () => {
   return (
@@ -54,6 +55,7 @@ export const HomePage = () => {
         <Form />
         <Footer />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

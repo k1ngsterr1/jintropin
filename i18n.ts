@@ -10,8 +10,8 @@ i18n
   .init({
     fallbackLng: "en",
     detection: {
-      order: ["queryString", "cookie"],
-      cache: ["cookie"],
+      order: ["querystring", "cookie"],
+      caches: ["cookie"],
     },
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",

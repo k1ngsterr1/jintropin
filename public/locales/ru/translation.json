@@ -1,5 +1,16 @@
 {
-  "header": {
-    "logo": "ДЖИНТРОПИН"
+  "header-pc": {
+    "logo": "ДЖИНТРОПИН",
+    "whatsapp_btn": "Написать в Whatsapp",
+    "consultation_btn": "Получить консультацию"
+  },
+  "sideMenu": {
+    "feedback": "Отзывы",
+    "advantages": "Преимущества",
+    "certificate": "Сертификат",
+    "home": "Основное",
+    "contacts": "Контакты",
+    "contraindications": "Противопоказания",
+    "verification": "Проверка"
   }
 }

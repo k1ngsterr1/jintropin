@@ -1,10 +1,9 @@
-interface Props {
-  changeLanguage: (lng: string) => void;
-}
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./styles.module.scss";
-
+interface Props {
+  changeLanguage: (lng: string) => void;
+}
 const Switcher: React.FC<Props> = ({ changeLanguage }) => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
@@ -24,5 +23,4 @@ const Switcher: React.FC<Props> = ({ changeLanguage }) => {
     </div>
   );
 };
-
 export default Switcher;

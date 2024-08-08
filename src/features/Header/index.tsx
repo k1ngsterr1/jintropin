@@ -19,7 +19,7 @@ export const Header = () => {
         <div className={styles.header_pc__items}>
           <Fade>
             <a href="/home" className={styles.header_pc__logo}>
-              {t("header.logo")}
+              {t("header-pc.logo")}
             </a>
           </Fade>
           <nav className="flex items-center gap-8">
@@ -35,12 +35,18 @@ export const Header = () => {
             </Fade>
             <Fade delay={0.19}>
               <>
-                <Button text="Написать в Whatsapp" buttonType="outline" />
+                <Button
+                  text={`${t("header-pc.whatsapp_btn")}`}
+                  buttonType="outline"
+                />
               </>
             </Fade>
             <Fade delay={0.21}>
               <>
-                <Button text="Получить консультацию" buttonType="outline" />
+                <Button
+                  text={`${t("header-pc.consultation_btn")}`}
+                  buttonType="outline"
+                />
               </>
             </Fade>
             <Fade delay={0.23}>
