@@ -50,3 +50,44 @@ export const ChooseTab = () => {
     </div>
   );
 };
+
+export const ChooseTabMobile = () => {
+  const { splideRef, goPrev, goNext } = useCustomButton();
+
+  return (
+    <div className={styles.container}>
+      <div className={styles.container__items}>
+        <img
+          onClick={goPrev}
+          className={`${styles.customButton} ${styles.prev}`}
+          src={left}
+          alt=""
+        />
+        <img
+          onClick={goNext}
+          className={`${styles.customButton} ${styles.next}`}
+          src={right}
+          alt=""
+        />
+        <Splide
+          ref={splideRef}
+          aria-label="My Favorite Images"
+          options={{
+            width: 1300,
+            focus: "center",
+            perPage: 1,
+            perMove: 1,
+            pagination: false,
+            arrows: false,
+          }}
+        >
+          {photoCards.map((item) => (
+            <SplideSlide key={item.id}>
+              <ChooseCard photo={item.photo} />
+            </SplideSlide>
+          ))}
+        </Splide>
+      </div>
+    </div>
+  );
+};

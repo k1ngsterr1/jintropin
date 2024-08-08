@@ -1,10 +1,15 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .container {
   &__items {
     display: flex;
     justify-content: center;
     overflow: hidden;
     @apply pt-16;
-    width: 65%;
+    width: 100%;
+    @include respond-to("xl") {
+      width: 65%;
+    }
     position: relative;
     margin: auto;
   }
@@ -19,9 +24,15 @@
 }
 
 .customButton.prev {
-  left: 0px;
+  left: 20px;
+  @include respond-to("xl") {
+    left: 0px;
+  }
 }
 
 .customButton.next {
-  right: 0px;
+  right: 20px;
+  @include respond-to("xl") {
+    right: 0px;
+  }
 }

@@ -1,19 +1,25 @@
 import { navLinks } from "@shared/lib/content/links";
 import Button from "@shared/ui/Buttons/ReactButton";
-import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import { PCBurgerButton } from "@shared/ui/Buttons/PCBurgerButton";
 
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import Switcher from "@features/SwitchLanguage";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <>
       <header className={styles.header_pc}>
         <div className={styles.header_pc__items}>
           <Fade>
             <a href="/home" className={styles.header_pc__logo}>
-              Джинтропин
+              {t("header.logo")}
             </a>
           </Fade>
           <nav className="flex items-center gap-8">
@@ -25,7 +31,7 @@ export const Header = () => {
               </Fade>
             ))}
             <Fade delay={0.17}>
-              <ThemeSwitcher />
+              <Switcher changeLanguage={changeLanguage} />
             </Fade>
             <Fade delay={0.19}>
               <>

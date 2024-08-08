@@ -16,6 +16,7 @@ import ContactsPage from "@pages/Contacts";
 import FeedbackPage from "@pages/Feedback";
 
 function App() {
+  localStorage.setItem("theme", "dark");
   return (
     <>
       <Router>

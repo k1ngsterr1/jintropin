@@ -1,0 +1,36 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
+.container {
+  display: flex;
+  flex-direction: column;
+  @apply bg-gray;
+  @apply mt-16 pb-32;
+
+  &__heading {
+    font-size: clamp(32px, 3.33312vw, 128px);
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    @apply text-white;
+    @apply mt-16;
+
+    &__span {
+      @apply text-primary;
+    }
+  }
+  .mob {
+    display: block;
+  }
+  .ipad {
+    display: none;
+  }
+  @include respond-to("md") {
+    .mob {
+      display: none;
+    }
+    .ipad {
+      display: block;
+    }
+  }
+}

@@ -22,6 +22,7 @@ import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
 import FormMobile from "@widgets/HomePage/Mobile/Form";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
+import { ChooseMobile } from "@widgets/HomePage/Mobile/Choose";
 
 export const HomePage = () => {
   return (
@@ -33,6 +34,7 @@ export const HomePage = () => {
         <AdvantagesMobile />
         <ContraindicationsMobile />
         <CertificateMobile />
+        <ChooseMobile />
         <FormMobile />
         <FooterMobile />
       </div>
