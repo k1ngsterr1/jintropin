@@ -37,8 +37,15 @@
     "heading": "CONTACT US",
     "paragraph": "Submit a request to contact us",
     "placeholder1": "Your Name",
-    "placeholder2": "Phone Number",
+    "placeholder2": "Email Address",
     "submit": "Submit"
+  },
+  "verification": {
+    "heading": "HOW TO PASS VERIFICATION?",
+    "paragraph": "It's easy to verify the authenticity of our product:",
+    "point1": "- Remove the foil strip from the protective sticker with a unique number and fiber optics;",
+    "point2": "- Enter the 12-digit code located under the strip into the special field on the official website.",
+    "check": "Check"
   },
   "logo": "JINTROPIN",
   "feedback": "FEEDBACK"

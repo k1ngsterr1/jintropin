@@ -30,6 +30,10 @@ export const links: Record<Language, Link[]> = {
       text: "Противопоказания",
       href: "/contraindications",
     },
+    {
+      text: "Проверка",
+      href: "/verification",
+    },
   ],
   en: [
     {
@@ -55,6 +59,10 @@ export const links: Record<Language, Link[]> = {
     {
       text: "Contraindications",
       href: "/contraindications",
+    },
+    {
+      text: "Verification",
+      href: "/verification",
     },
   ],
 };
