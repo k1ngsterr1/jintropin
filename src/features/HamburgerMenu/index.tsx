@@ -2,6 +2,9 @@ import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
 import { links } from "@shared/lib/content/Header/Menu";
 import { Fade } from "react-awesome-reveal";
+import Switcher from "@features/SwitchLanguage";
+import { useTranslation } from "react-i18next";
+import { Language } from "i18n";
 
 interface Props {
   isActive: boolean;
@@ -9,7 +12,13 @@ interface Props {
 }
 
 export const HamburgerMenu: React.FC<Props> = ({ isActive, handleClick }) => {
-  console.log(isActive);
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language as Language;
+  const content = links[currentLanguage] || links.en;
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
   return (
     <div className={styles.menu}>
       <button className={styles.menu__burger} onClick={handleClick}>
@@ -43,7 +52,7 @@ export const HamburgerMenu: React.FC<Props> = ({ isActive, handleClick }) => {
             isActive ? styles.menu__active__nav__list : styles.menu__nav__list
           }`}
         >
-          {links.map((item, index) => (
+          {content.map((item, index) => (
             <li
               key={index}
               className={`${
@@ -64,6 +73,18 @@ export const HamburgerMenu: React.FC<Props> = ({ isActive, handleClick }) => {
               </Link>
             </li>
           ))}
+          <li
+            key={8}
+            className={`${
+              isActive
+                ? styles.menu__active__nav__list__item
+                : styles.menu__nav__list__item
+            }`}
+          >
+            <Fade>
+              <Switcher changeLanguage={changeLanguage} />
+            </Fade>
+          </li>
         </ul>
       </nav>
     </div>

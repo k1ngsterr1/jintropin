@@ -14,12 +14,10 @@
     width: 80%;
     color: white;
     font-size: clamp(15px, 7.0092vw, 60px);
-    line-height: clamp(20px, 9.3456vw, 80px);
+    // line-height: clamp(20px, 9.3456vw, 80px);
     font-weight: 700;
     font-family: "Oswald", sans-serif;
     text-align: center;
-
-    margin-top: clamp(10px, 4.6728vw, 40px);
 
     &__span {
       color: #fff200;

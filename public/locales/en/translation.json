@@ -23,5 +23,23 @@
     "heading": "CONTRAINDICATIONS",
     "paragraph": "You can find medical contraindications in the instructions:",
     "contact": "Contact us"
-  }
+  },
+  "certificate-pc": {
+    "heading": "QUALITY CERTIFICATES",
+    "paragraph": "Jintropin meets the highest quality standards. This is confirmed by the following documents:",
+    "download_btn": "Download"
+  },
+  "choose-pc": {
+    "heading1": "CHAMPIONS CHOOSE",
+    "heading2": "JINTROPIN"
+  },
+  "contact-pc": {
+    "heading": "CONTACT US",
+    "paragraph": "Submit a request to contact us",
+    "placeholder1": "Your Name",
+    "placeholder2": "Phone Number",
+    "submit": "Submit"
+  },
+  "logo": "JINTROPIN",
+  "feedback": "FEEDBACK"
 }

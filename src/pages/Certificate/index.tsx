@@ -6,6 +6,7 @@ import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { SideMenu } from "@features/SideMenu";
 import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
 import { Certificate } from "@widgets/HomePage/Сertificate";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const CertificatePage = () => {
   return (
     <div className={styles.certificate}>
@@ -25,6 +26,7 @@ const CertificatePage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

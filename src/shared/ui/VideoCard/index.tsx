@@ -10,6 +10,7 @@ interface ItemContentProps {
   text: string;
   to: string;
   buttonColor: string;
+  lng: "en" | "ru";
 }
 
 export const VideoCard: React.FC<ItemContentProps> = ({
@@ -19,6 +20,7 @@ export const VideoCard: React.FC<ItemContentProps> = ({
   text,
   to,
   buttonColor,
+  lng,
 }) => (
   <div className={styles.container__content}>
     {img && <img className={styles.container__content__img} src={img} alt="" />}
@@ -27,7 +29,11 @@ export const VideoCard: React.FC<ItemContentProps> = ({
       <p style={{ color: `${textColor}` }}>{text}</p>
     </div>
     <div className={styles.container__button}>
-      <LinkButton to={to} text="Смотреть видео" buttonType={buttonColor} />
+      <LinkButton
+        to={to}
+        text={`${lng === "ru" ? "Смотреть видео" : "Watch the video"}`}
+        buttonType={buttonColor}
+      />
     </div>
   </div>
 );

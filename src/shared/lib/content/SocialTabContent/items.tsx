@@ -148,3 +148,25 @@ export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
     ],
   },
 ];
+export const adaptedMain: { text: string; icons: React.ReactNode[] }[] = [
+  {
+    text: "Соц сети",
+    icons: [
+      <SocialLink
+        icon={FaInstagram}
+        href="https://www.instagram.com"
+        key="instagram"
+      />,
+      <SocialLink
+        icon={FaWhatsapp}
+        href="https://www.whatsapp.com"
+        key="whatsapp"
+      />,
+      <SocialLink
+        icon={FaTelegramPlane}
+        href="https://t.me/jintropine_channel"
+        key="telegram"
+      />,
+    ],
+  },
+];

@@ -18,7 +18,7 @@ const ThemeSwitcher: React.FC = () => {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} style={{ display: "none" }}>
       <FontAwesomeIcon
         icon={theme === "light" ? faMoon : faSun}
         className="text-primary"

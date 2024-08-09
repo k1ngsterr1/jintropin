@@ -6,6 +6,7 @@ import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { SideMenu } from "@features/SideMenu";
 import FormMobile from "@widgets/HomePage/Mobile/Form";
 import { Form } from "@widgets/HomePage/Form";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const ContactsPage = () => {
   return (
     <div className={styles.contacts}>
@@ -24,6 +25,7 @@ const ContactsPage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

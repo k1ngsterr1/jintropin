@@ -6,6 +6,7 @@ import { Advantages } from "@widgets/HomePage/Advantages";
 import { Footer } from "@widgets/HomePage/Footer";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { SideMenu } from "@features/SideMenu";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const AdvantagesPage = () => {
   return (
     <div className={styles.advantages}>
@@ -22,6 +23,7 @@ const AdvantagesPage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

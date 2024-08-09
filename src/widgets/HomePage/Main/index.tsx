@@ -26,7 +26,7 @@ export const Main = () => {
           <Fade delay={0.2}>
             <Paragraph
               paragraphType="white"
-              text={`${t("main-pc.paragraph")}`}
+              text={t("main-pc.paragraph")}
               width="35%"
               margin="mt-4"
               lineHeight="clamp(13.5px,1.40616vw,54px)"
@@ -35,7 +35,7 @@ export const Main = () => {
           <Fade delay={0.3}>
             <div className={styles.container__items}>
               <Button
-                text={`${t("main-pc.apply")}`}
+                text={t("main-pc.apply")}
                 buttonType="outline"
                 margin="mt-4"
               />

@@ -7,16 +7,23 @@ import {
 
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
+import { Language } from "i18n";
 
-export const NavigationTab: React.FC = () => (
-  <nav className={styles.navigation}>
-    {navigation.map((link) => (
-      <a href={link.href} className={styles.navigation__link}>
-        <Fade>{link.label}</Fade>
-      </a>
-    ))}
-  </nav>
-);
+export const NavigationTab: React.FC = () => {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language as Language;
+  const content = navigation[currentLanguage] || navigation.en;
+  return (
+    <nav className={styles.navigation}>
+      {content.map((link) => (
+        <a href={link.href} className={styles.navigation__link}>
+          <Fade>{link.label}</Fade>
+        </a>
+      ))}
+    </nav>
+  );
+};
 
 export const SocialTab: React.FC = () => (
   <nav className={styles.nav}>

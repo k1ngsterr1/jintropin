@@ -2,6 +2,7 @@
 @import "@shared/styles/variables";
 .container {
   display: flex;
+  overflow-x: hidden;
   gap: clamp(20px, 2.0832vw, 80px);
   border-top: 1px solid var(--yellow, #fff200);
   border-bottom: 1px solid var(--yellow, #fff200);

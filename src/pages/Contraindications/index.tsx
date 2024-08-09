@@ -6,6 +6,7 @@ import { SideMenu } from "@features/SideMenu";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { ContraindicationsMobile } from "@widgets/HomePage/Mobile/Contraindications";
 import { Contraindications } from "@widgets/HomePage/Contraindications";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const ContraindicationsPage = () => {
   return (
     <div className={styles.contraindications}>
@@ -20,6 +21,7 @@ const ContraindicationsPage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

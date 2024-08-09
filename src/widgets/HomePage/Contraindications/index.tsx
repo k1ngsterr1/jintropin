@@ -19,12 +19,12 @@ export const Contraindications = () => {
         width="25%"
         margin="m-auto pt-4"
         align="text-center"
-        text={`${t("contraindications-pc.paragraph")}`}
+        text={t("contraindications-pc.paragraph")}
         paragraphType="yellow"
       />
       <ContraindicationsTab />
       <Button
-        text={`${t("contraindications-pc.contact")}`}
+        text={t("contraindications-pc.contact")}
         buttonType="outline"
         margin="mt-16"
       />

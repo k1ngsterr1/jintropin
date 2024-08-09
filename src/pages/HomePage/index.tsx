@@ -24,6 +24,7 @@ import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
 import { ChooseMobile } from "@widgets/HomePage/Mobile/Choose";
 import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
+import { VideoBlockMobile } from "@widgets/HomePage/Mobile/VideBlock";
 
 export const HomePage = () => {
   return (
@@ -34,6 +35,7 @@ export const HomePage = () => {
         <ApplicationMobile />
         <AdvantagesMobile />
         <ContraindicationsMobile />
+        <VideoBlockMobile />
         <CertificateMobile />
         <ChooseMobile />
         <FormMobile />

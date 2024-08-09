@@ -1,6 +1,11 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .btn {
   font-family: "Oswald", sans-serif;
-  font-size: clamp(12px, 1.24992vw, 48px);
   font-weight: 800;
   color: #fff200;
+  font-size: clamp(15px, 7.0092vw, 60px);
+  @include respond-to("xl") {
+    font-size: clamp(12px, 1.24992vw, 48px);
+  }
 }

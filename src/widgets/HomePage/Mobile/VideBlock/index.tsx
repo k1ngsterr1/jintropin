@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import reelsData from "@shared/lib/content/ReelsCardsContent";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { useCustomButton } from "@shared/lib/hooks/useCustomButton";
-import { VideoCard } from "../../../shared/ui/VideoCard/index";
+import { VideoCard } from "@shared/ui/VideoCard/index";
 
 import left from "@assets/Choose/ArrowLeft.svg";
 import right from "@assets/Choose/ArrowRight.svg";
@@ -14,8 +14,7 @@ import styles from "./styles.module.scss";
 import "@splidejs/react-splide/css";
 import { useTranslation } from "react-i18next";
 import { Language } from "i18n";
-
-export const VideoBlock = () => {
+export const VideoBlockMobile = () => {
   const { splideRef, goPrev, goNext } = useCustomButton();
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language as Language;
@@ -40,9 +39,8 @@ export const VideoBlock = () => {
           ref={splideRef}
           aria-label="My Favorite Images"
           options={{
-            width: 1500,
             focus: "center",
-            perPage: 3,
+            perPage: 1,
             perMove: 1,
             pagination: false,
             arrows: false,

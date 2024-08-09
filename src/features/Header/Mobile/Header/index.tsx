@@ -14,9 +14,7 @@ export const HeaderMobile: React.FC = () => {
   return (
     <header className={`${styles.header} ${isActive ? styles.active : ""}`}>
       <div className={styles.header__container}>
-        <span className={styles.header__container__logo}>
-          {t("header.logo")}
-        </span>
+        <span className={styles.header__container__logo}>{t("logo")}</span>
         <HamburgerMenu isActive={isActive} handleClick={handleClick} />
       </div>
     </header>

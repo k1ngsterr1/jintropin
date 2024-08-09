@@ -6,6 +6,7 @@ import { SideMenu } from "@features/SideMenu";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import Feedback from "@widgets/Feedback";
 import FeedbackMobile from "@widgets/Feedback/Mobile";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const FeedbackPage = () => {
   return (
     <div className={styles.contraindications}>
@@ -20,6 +21,7 @@ const FeedbackPage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

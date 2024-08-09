@@ -1,8 +1,16 @@
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .container {
   &__button {
     position: absolute;
     bottom: 0;
     margin-bottom: clamp(15px, 1.5624vw, 60px);
+    @include respond-to("md") {
+      @apply mb-8;
+    }
+    @include respond-to("xl") {
+      margin-bottom: clamp(15px, 1.5624vw, 60px);
+    }
   }
   &__content {
     display: flex;
@@ -13,6 +21,13 @@
 
     &__img {
       position: relative;
+      @include respond-to("md") {
+        height: clamp(200px, 93.45599999999999vw, 800px);
+      }
+
+      @include respond-to("xl") {
+        height: inherit;
+      }
     }
 
     &__text {
@@ -22,7 +37,13 @@
       width: 80%;
       // left: 100px;
       text-align: left;
-      font-size: clamp(14px, 1.45824vw, 56px);
+      font-size: clamp(8px, 3.73824vw, 32px);
+      @include respond-to("md") {
+        @apply p-10;
+      }
+      @include respond-to("xl") {
+        font-size: clamp(14px, 1.45824vw, 56px);
+      }
       display: flex;
       gap: 10px;
     }

@@ -17,6 +17,7 @@
   &__items {
     display: flex;
     width: 100%;
+    @apply mt-4;
     &__icon {
       display: flex;
       align-items: center;
