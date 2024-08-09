@@ -6,6 +6,7 @@ import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { SideMenu } from "@features/SideMenu";
 import Verification from "@widgets/Verification";
 import VerificationMobile from "@widgets/Verification/Mobile";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 const VerificationPage = () => {
   return (
     <div className={styles.certificate}>
@@ -20,6 +21,7 @@ const VerificationPage = () => {
         <Footer />
         <SideMenu />
       </div>
+      <ThemeSwitcher />
     </div>
   );
 };

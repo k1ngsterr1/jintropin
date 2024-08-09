@@ -13,13 +13,13 @@ export const navigation: Record<Language, NavLink[]> = {
   ru: [
     { label: "ЧТО ТАКОЕ ДЖИНТРОПИН?", href: "/main" },
     { label: "Q/A", href: "questions" },
-    { label: "ПРОВЕРИТЬ ОРИГИНАЛЬНОСТЬ", href: "/legit" },
+    { label: "ПРОВЕРИТЬ ОРИГИНАЛЬНОСТЬ", href: "/verification" },
     { label: "КОНТАКТЫ", href: "/contacts" },
   ],
   en: [
     { label: "WHAT IS JINTROPIN?", href: "/main" },
     { label: "Q/A", href: "questions" },
-    { label: "VERIFY AUTHENTICITY", href: "/legit" },
+    { label: "VERIFY AUTHENTICITY", href: "/verification" },
     { label: "CONTACTS", href: "/contacts" },
   ],
 };
