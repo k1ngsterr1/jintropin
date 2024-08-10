@@ -1,5 +1,9 @@
 .footer {
   @apply pt-16 pb-16;
+  background-image: url("../../../assets/Footer/bg_text.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.05);
   &__content {
     display: flex;

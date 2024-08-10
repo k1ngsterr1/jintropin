@@ -1,12 +1,13 @@
 import { Header } from "@features/Header";
-import styles from "./styles.module.scss";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
+import { SideMenu } from "@features/SideMenu";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import { Footer } from "@widgets/HomePage/Footer";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
-import { SideMenu } from "@features/SideMenu";
 import Verification from "@widgets/Verification";
 import VerificationMobile from "@widgets/Verification/Mobile";
-import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
+import styles from "./styles.module.scss";
+
 const VerificationPage = () => {
   return (
     <div className={styles.certificate}>

@@ -1,14 +1,21 @@
-import { Fade } from "react-awesome-reveal";
-import styles from "./styles.module.scss";
 import MainIll from "@assets/Main/MainPageIll.webp";
-import Button from "@shared/ui/Buttons/ReactButton";
+import MainMobIll from "@assets/Main/img_mob.webp";
 import { SocialMediaTabMobile } from "@features/Tab__Components/SocialMediaTab/Mobile";
+import Button from "@shared/ui/Buttons/ReactButton";
+import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
+
 const MainMobile = () => {
   const { t } = useTranslation();
   return (
     <div className={styles.main}>
-      <img src={MainIll} alt="" className={styles.main__img} />
+      <img
+        src={MainMobIll}
+        className={styles.main__mob}
+        alt="Main Image Mobile"
+      />
+      <img src={MainIll} alt="Main" className={styles.main__img} />
       <div className={styles.main__container}>
         <Fade className={styles.main__container__item}>
           <h1 className={styles.main__container__heading}>

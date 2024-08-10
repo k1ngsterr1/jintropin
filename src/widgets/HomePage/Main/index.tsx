@@ -1,17 +1,17 @@
-import Paragraph from "@shared/ui/Paragraph";
-import Button from "@shared/ui/Buttons/ReactButton";
 import MainIll from "@assets/Main/MainPageIll.webp";
 import { SocialMediaTab } from "@features/Tab__Components/SocialMediaTab";
+import Paragraph from "@shared/ui/Paragraph";
 import { Fade } from "react-awesome-reveal";
 
-import styles from "./styles.module.scss";
+import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const Main = () => {
   const { t } = useTranslation();
   return (
     <>
-      <main className={styles.container}>
+      <main className={styles.container} id="main">
         <SocialMediaTab />
         <div className={styles.container__main}>
           <img src={MainIll} alt="" className={styles.container__img} />
@@ -34,7 +34,8 @@ export const Main = () => {
           </Fade>
           <Fade delay={0.3}>
             <div className={styles.container__items}>
-              <Button
+              <LinkButton
+                to="#form"
                 text={t("main-pc.apply")}
                 buttonType="outline"
                 margin="mt-4"
