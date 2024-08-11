@@ -6,6 +6,7 @@ import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import styles from "./styles.module.scss";
 import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
+import { SideMenu } from "@features/SideMenu";
 
 export const QuestionsPage = () => {
   return (
@@ -16,6 +17,7 @@ export const QuestionsPage = () => {
         <div className={styles.footer}>
           <Footer />
         </div>
+        <SideMenu />
       </div>
       <div className={styles.mob}>
         <HeaderMobile />
