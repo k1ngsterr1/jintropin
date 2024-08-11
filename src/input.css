@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.light {
-    @apply bg-white text-dark;
-}
-
 .dark {
-    @apply bg-dark text-primary;
+  @apply bg-dark text-primary;
 }

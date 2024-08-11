@@ -1,5 +1,5 @@
-import React from "react";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
+import React from "react";
 
 import styles from "./styles.module.scss";
 
@@ -31,6 +31,7 @@ export const VideoCard: React.FC<ItemContentProps> = ({
     <div className={styles.container__button}>
       <LinkButton
         to={to}
+        target="_blank"
         text={`${lng === "ru" ? "Смотреть видео" : "Watch the video"}`}
         buttonType={buttonColor}
       />

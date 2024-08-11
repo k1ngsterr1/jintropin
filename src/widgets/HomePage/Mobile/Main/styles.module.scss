@@ -5,8 +5,11 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // background-image: url("../../../../assets/Main/MainPageIll.webp");
-  // background-repeat: no-repeat;
+
+  &__mob {
+    display: none;
+  }
+
   &__img {
     width: 100%;
     height: 100vh;
@@ -15,6 +18,33 @@
     left: 0;
     z-index: -100;
   }
+
+  @include respond-to("xs") {
+    &__mob {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -100;
+      display: flex;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+
+  @include respond-to("lg") {
+    .mob {
+      display: none;
+    }
+
+    &__img {
+      display: flex;
+    }
+  }
+
   &__container {
     width: 90%;
     display: flex;

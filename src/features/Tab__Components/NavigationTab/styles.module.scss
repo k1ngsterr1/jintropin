@@ -31,8 +31,13 @@
     font-size: clamp(9px, 4.20552vw, 36px);
     @apply text-white;
     font-family: "Roboto", sans-serif;
+    transition: 0.3s all;
     @include respond-to("xl") {
       font-size: clamp(8px, 0.83328vw, 32px);
+    }
+
+    &:hover {
+      @apply text-primary;
     }
   }
   @include respond-to("xl") {

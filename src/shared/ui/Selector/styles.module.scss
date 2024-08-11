@@ -1,49 +1,109 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 .selector {
+  height: clamp(25px, 2.604vw, 100px);
+  width: clamp(500px, 52.08vw, 2000px);
+  position: relative;
+  cursor: pointer;
+
+  @include respond-to("xs") {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include respond-to("xl") {
     height: clamp(25px, 2.604vw, 100px);
     width: clamp(500px, 52.08vw, 2000px);
-    position: relative;
-    cursor: pointer;
+  }
 }
-
-
 
 .selectorChevron {
-    position: absolute;
+  position: absolute;
+  right: 10px;
+  @apply text-white;
+  transition: 0.3s all;
+
+  &:hover {
+    @apply text-primary;
+  }
+
+  @include respond-to("xs") {
+    right: 0;
+  }
+
+  @include respond-to("xl") {
     right: 10px;
-    @apply text-white;
-    transition: 0.3s all;
-
-    &:hover {
-        @apply text-primary;
-    }
+  }
 }
-
 
 .container {
+  width: clamp(500px, 52.08vw, 2000px);
+  border-bottom: 1px solid;
+  @apply border-white;
+
+  @include respond-to("xs") {
+    width: 80%;
+    @apply pb-8;
+  }
+
+  @include respond-to("xl") {
     width: clamp(500px, 52.08vw, 2000px);
-    border-bottom: 1px solid #FFF;
+  }
 }
 
-
 .list {
+  @apply mb-4;
+
+  @include respond-to("xs") {
+    @apply mt-8;
+  }
+
+  @include respond-to("xl") {
     @apply mb-4;
+  }
 }
 
 .selectorPlaceholder {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(12px, 1.24992vw, 48px);
+  font-weight: 500;
+  @apply text-primary;
+
+  @include respond-to("xs") {
+    width: 80%;
+    text-align: center;
+    @apply text-lg;
+  }
+
+  @include respond-to("xl") {
     font-family: "Oswald", sans-serif;
     font-size: clamp(12px, 1.24992vw, 48px);
     font-weight: 500;
+  }
 }
 
 .listItem {
-    font-family: "Oswald", sans-serif;
-    font-size: clamp(10px, 1.0416vw, 40px);
-    font-weight: 300;
-    @apply text-white;
-    transition: 0.3s all;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(10px, 1.0416vw, 40px);
+  font-weight: 300;
+  @apply text-white;
+  transition: 0.3s all;
 
-    &:hover {
-        @apply text-primary;
-        cursor: pointer;
-    }
+  &:hover {
+    @apply text-primary;
+    cursor: pointer;
+  }
+
+  @include respond-to("xs") {
+    text-align: center;
+    @apply text-base;
+  }
+
+  @include respond-to("xl") {
+    font-size: clamp(10px, 1.0416vw, 40px);
+    line-height: clamp(20px, 2.0832vw, 80px);
+  }
 }

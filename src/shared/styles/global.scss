@@ -11,6 +11,11 @@
   scroll-behavior: smooth;
   scrollbar-color: #fff200 transparent;
 }
+
+body {
+  @apply bg-dark;
+}
+
 ::selection {
   background-color: #fff200;
   color: #000000;

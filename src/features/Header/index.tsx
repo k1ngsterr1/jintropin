@@ -1,11 +1,11 @@
 import { navLinks } from "@shared/lib/content/links";
-import Button from "@shared/ui/Buttons/ReactButton";
 import { PCBurgerButton } from "@shared/ui/Buttons/PCBurgerButton";
 
-import styles from "./styles.module.scss";
-import { Fade } from "react-awesome-reveal";
 import Switcher from "@features/SwitchLanguage";
+import LinkButton from "@shared/ui/Buttons/LinkButton";
+import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const Header = () => {
   const { t, i18n } = useTranslation();
@@ -35,7 +35,9 @@ export const Header = () => {
             </Fade>
             <Fade delay={0.19}>
               <>
-                <Button
+                <LinkButton
+                  to="https://whatsapp.com"
+                  target="_blank"
                   text={`${t("header-pc.whatsapp_btn")}`}
                   buttonType="outline"
                 />
@@ -43,7 +45,8 @@ export const Header = () => {
             </Fade>
             <Fade delay={0.21}>
               <>
-                <Button
+                <LinkButton
+                  to="#form"
                   text={`${t("header-pc.consultation_btn")}`}
                   buttonType="outline"
                 />

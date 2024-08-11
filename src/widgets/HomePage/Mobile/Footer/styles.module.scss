@@ -5,6 +5,7 @@
   background-color: rgba(255, 255, 255, 0.05);
   padding-bottom: 10px;
   position: relative;
+
   &__content {
     width: 100%;
     display: flex;
@@ -13,16 +14,18 @@
     gap: clamp(15px, 7.0092vw, 60px);
     margin: auto;
     padding-bottom: 2rem;
-  }
-  &__logo {
-    @apply text-primary;
-    font-family: "Unbounded", sans-serif;
-    @apply mt-6;
-    @include respond-to("md") {
-      @apply mt-10;
+
+    &__logo {
+      @apply text-primary;
+      font-family: "Unbounded", sans-serif;
+      @apply mt-6;
+      @include respond-to("md") {
+        @apply mt-10;
+      }
+      font-size: clamp(14px, 6.541919999999999vw, 56px);
     }
-    font-size: clamp(14px, 6.541919999999999vw, 56px);
   }
+
   &__img {
     position: absolute;
     bottom: 0;
@@ -30,5 +33,12 @@
     width: 100%;
     height: clamp(45px, 21.0276vw, 180px);
     object-fit: cover;
+  }
+
+  &__logo {
+    width: clamp(100px, 46.727999999999994vw, 400px);
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    margin: auto;
   }
 }

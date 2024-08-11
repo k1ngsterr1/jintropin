@@ -1,13 +1,14 @@
-import React from "react";
-import Paragraph from "@shared/ui/Paragraph/index";
-import Input from "@shared/ui/Input/index";
 import Button from "@shared/ui/Buttons/ReactButton/index";
+import Input from "@shared/ui/Input/index";
+import Paragraph from "@shared/ui/Paragraph/index";
 
-import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const FormComponent = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
   return (
     <div className={styles.container}>
       <Paragraph
@@ -18,11 +19,16 @@ export const FormComponent = () => {
       <Input
         placeholder={t("contact-pc.placeholder1")}
         textAlign="center"
+        name="name"
+        required
         margin="mt-10"
       />
       <Input
         placeholder={t("contact-pc.placeholder2")}
         textAlign="center"
+        type={currentLanguage === "ru" ? "phone" : "email"}
+        name={currentLanguage === "ru" ? "phone" : "email"}
+        required
         margin="mt-10"
       />
       <Button

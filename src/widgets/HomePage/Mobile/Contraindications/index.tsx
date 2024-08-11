@@ -1,12 +1,11 @@
-import React from "react";
-import Paragraph from "@shared/ui/Paragraph";
-import { ContraindicationsTab } from "@features/Tab__Components/ContraindicationsTab";
-import Button from "@shared/ui/Buttons/ReactButton";
 import { InformationBanner } from "@features/InformationBanner";
+import { ContraindicationsTab } from "@features/Tab__Components/ContraindicationsTab";
+import Paragraph from "@shared/ui/Paragraph";
 
-import styles from "./styles.module.scss";
+import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const ContraindicationsMobile = () => {
   const { t } = useTranslation();
@@ -27,7 +26,8 @@ export const ContraindicationsMobile = () => {
         />
       </Fade>
       <ContraindicationsTab />
-      <Button
+      <LinkButton
+        to="#form-mob"
         text={t("contraindications-pc.contact")}
         buttonType="outline"
         margin="mt-16"

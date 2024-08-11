@@ -19,7 +19,6 @@ export function useSideMenuAnimation() {
             right: 0,
             ease: "power3.out",
           });
-          // Reveal animation for links from the right
           gsap.fromTo(
             links,
             { x: 500, opacity: 0 },

@@ -1,14 +1,14 @@
-import React from "react";
 import { navigation } from "@shared/lib/content/links/index";
+import React from "react";
 import {
   adaptedItems,
   socialItems,
 } from "../../../shared/lib/content/SocialTabContent/items";
 
-import styles from "./styles.module.scss";
+import { Language } from "i18n";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
-import { Language } from "i18n";
+import styles from "./styles.module.scss";
 
 export const NavigationTab: React.FC = () => {
   const { i18n } = useTranslation();
@@ -45,7 +45,7 @@ export const SocialTabMobile: React.FC = () => (
       <div key={index} className={styles.iconContainer_mobile}>
         {item.icons.map((icon, idx) => (
           <div key={idx}>
-            <Fade>{icon}</Fade>
+            <Fade className="text-primary">{icon}</Fade>
           </div>
         ))}
       </div>
