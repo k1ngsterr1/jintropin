@@ -7,6 +7,7 @@ import styles from "./styles.module.scss";
 import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 import { useTranslation } from "react-i18next";
 import { Language } from "i18n";
+import { Fade } from "react-awesome-reveal";
 
 export const QuestionsTab = () => {
   const { t, i18n } = useTranslation();
@@ -18,12 +19,14 @@ export const QuestionsTab = () => {
       <span className={styles.container__heading}>{t("questions")}</span>
 
       {content.map((option) => (
+        // <Fade className="w-full">
         <div className={styles.container__items} key={option.id}>
           <Selector
             placeholder={option.options[0].placeholder}
             options={option.options}
           />
         </div>
+        // </Fade>
       ))}
     </div>
   );
