@@ -1,10 +1,14 @@
 import { SwiperFeedback } from "@features/Tab__Components/Feedback";
-import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
+
 const Feedback = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.feedback}>
-      <h2 className={styles.feedback__heading}>ОТЗЫВЫ</h2>
+      <h1 className={styles.feedback__heading}>{t("feedback")}</h1>
       <Fade className={styles.feedback__animation}>
         <SwiperFeedback />
       </Fade>
