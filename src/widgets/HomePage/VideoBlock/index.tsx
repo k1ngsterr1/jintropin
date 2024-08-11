@@ -1,8 +1,6 @@
-import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import reelsData from "@shared/lib/content/ReelsCardsContent";
-import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { useCustomButton } from "@shared/lib/hooks/useCustomButton";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { VideoCard } from "../../../shared/ui/VideoCard/index";
 
 import left from "@assets/Choose/ArrowLeft.svg";
@@ -10,10 +8,10 @@ import right from "@assets/Choose/ArrowRight.svg";
 
 import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 
-import styles from "./styles.module.scss";
 import "@splidejs/react-splide/css";
-import { useTranslation } from "react-i18next";
 import { Language } from "i18n";
+import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const VideoBlock = () => {
   const { splideRef, goPrev, goNext } = useCustomButton();

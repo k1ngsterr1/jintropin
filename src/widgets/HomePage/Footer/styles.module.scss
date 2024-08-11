@@ -1,20 +1,31 @@
 .footer {
-  @apply pt-16 pb-16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background-image: url("../../../assets/Footer/bg_text.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.05);
+  @apply pt-16 pb-16;
+
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 86.6%;
     margin: auto;
+
+    &__logo {
+      @apply text-primary;
+      font-family: "Unbounded", sans-serif;
+      font-size: clamp(16px, 1.66656vw, 64px);
+    }
   }
+
   &__logo {
-    @apply text-primary;
-    font-family: "Unbounded", sans-serif;
-    font-size: clamp(16px, 1.66656vw, 64px);
+    cursor: pointer;
+    @apply mt-8;
   }
 }
