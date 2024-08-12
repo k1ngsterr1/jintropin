@@ -104,6 +104,7 @@
       }
     }
     &__nav {
+      overflow: hidden;
       position: fixed;
       z-index: 1000;
       top: clamp(40px, 18.6912vw, 160px);
