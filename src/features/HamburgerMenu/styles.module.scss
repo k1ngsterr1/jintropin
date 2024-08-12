@@ -5,6 +5,11 @@
   display: flex;
   width: clamp(20px, 9.3456vw, 80px);
   height: clamp(20px, 9.3456vw, 80px);
+  @include respond-to("xxs") {
+    width: clamp(25px, 11.681999999999999vw, 100px);
+    height: clamp(25px, 11.681999999999999vw, 100px);
+  }
+  z-index: 10000000000000000000000000;
   &__burger {
     width: 100%;
     height: 100%;
