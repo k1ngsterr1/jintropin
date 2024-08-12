@@ -12,7 +12,10 @@ export const HeaderMobile: React.FC = () => {
   };
 
   return (
-    <header className={`${styles.header} ${isActive ? styles.active : ""}`}>
+    <header
+      className={`${styles.header} ${isActive ? styles.active : ""}`}
+      id="header-mob"
+    >
       <div className={styles.header__container}>
         <span className={styles.header__container__logo}>{t("logo")}</span>
         <HamburgerMenu isActive={isActive} handleClick={handleClick} />
