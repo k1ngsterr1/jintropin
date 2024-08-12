@@ -13,7 +13,7 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-        <a href="#main" className={styles.footer__content__logo}>
+        <a href="#header" className={styles.footer__content__logo}>
           <Fade>{t("logo")}</Fade>
         </a>
         <NavigationTab />

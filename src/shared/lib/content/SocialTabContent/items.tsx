@@ -25,7 +25,7 @@ export const tabItems: Record<Language, TabItem[]> = {
       icons: [
         <SocialButton
           icon={FaInstagram}
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           key="instagram"
         />,
         <SocialButton
@@ -47,7 +47,7 @@ export const tabItems: Record<Language, TabItem[]> = {
       icons: [
         <SocialButton
           icon={FaInstagram}
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           key="instagram"
         />,
         <SocialButton
@@ -73,7 +73,7 @@ export const getTabItemsMobile = (size: number) => {
         <SocialButtonWithSize
           icon={FaInstagram}
           size={size}
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           key="instagram"
         />,
         <SocialButtonWithSize
@@ -99,7 +99,7 @@ export const socialItems: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialButtonBigger
         icon={FaInstagram}
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         key="instagram"
       />,
       <SocialButtonBigger
@@ -114,7 +114,7 @@ export const socialItems: { text: string; icons: React.ReactNode[] }[] = [
       />,
       <SocialButtonBigger
         icon={FaYoutube}
-        href="https://www.youtube.com"
+        href="https://youtube.com/@jintropine_shop?si=I_PumWwHqzqQTrUTrfr"
         key="youtube"
       />,
     ],
@@ -127,7 +127,7 @@ export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialLink
         icon={FaInstagram}
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         key="instagram"
       />,
       <SocialLink
@@ -142,7 +142,7 @@ export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
       />,
       <SocialLink
         icon={FaYoutube}
-        href="https://www.youtube.com"
+        href="https://youtube.com/@jintropine_shop?si=I_PumWwHqzqQTrUTrfr"
         key="youtube"
       />,
     ],
@@ -154,7 +154,7 @@ export const adaptedMain: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialLink
         icon={FaInstagram}
-        href="https://www.instagram.com"
+        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
         key="instagram"
       />,
       <SocialLink

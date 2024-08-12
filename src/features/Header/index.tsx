@@ -15,7 +15,7 @@ export const Header = () => {
   };
   return (
     <>
-      <header className={styles.header_pc}>
+      <header className={styles.header_pc} id="header">
         <div className={styles.header_pc__items}>
           <Fade>
             <a href="/home" className={styles.header_pc__logo}>

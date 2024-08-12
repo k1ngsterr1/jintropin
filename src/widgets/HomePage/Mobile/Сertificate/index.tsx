@@ -1,5 +1,7 @@
 import Paragraph from "@shared/ui/Paragraph";
-import LinkButton from "@shared/ui/Buttons/LinkButton";
+import LinkButton from "@shared/ui/Buttons/DownloadButton";
+import document1 from "@assets/Certificate/registry.pdf";
+import document2 from "@assets/Certificate/certificate.pdf";
 
 import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
@@ -24,6 +26,7 @@ export const CertificateMobile = () => {
         text={`${t("certificate-pc.download_btn")}`}
         buttonType="outline"
         margin="mt-12"
+        to={[document1, document2]}
       />
     </div>
   );

@@ -1,0 +1,89 @@
+@import "breakpoint-slicer";
+@import "../../../styles/mixins";
+@import "../../../styles/variables.scss";
+
+.button {
+  width: clamp(130px, 60.746399999999994vw, 520px);
+  height: clamp(27.5px, 12.8502vw, 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s all;
+  position: relative;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+
+  @include respond-to("xxs") {
+    font-size: clamp(7px, 3.889vw, 28px);
+  }
+
+  @include respond-to("xs") {
+    width: clamp(100px, 46.727999999999994vw, 400px);
+    height: clamp(27.5px, 5.544354838709677vw, 110px);
+    font-size: clamp(7px, 3.2709599999999996vw, 28px);
+  }
+
+  @include respond-to("xxs") {
+    width: clamp(115px, 53.737199999999994vw, 460px);
+    height: clamp(28px, 13.083839999999999vw, 112px);
+    font-size: clamp(9px, 4.20552vw, 36px);
+  }
+
+  @include respond-to("sm") {
+    width: clamp(130px, 26.20967741935484vw, 520px);
+    height: clamp(27.5px, 5.544354838709677vw, 110px);
+    font-size: clamp(7px, 1.8229166666666667vw, 28px);
+  }
+
+  @include respond-to("md") {
+    width: clamp(145px, 67.7556vw, 580px);
+    height: clamp(25px, 11.681999999999999vw, 100px);
+    font-size: clamp(10px, 4.6728vw, 40px);
+  }
+
+  @include respond-to("lg") {
+    width: clamp(150px, 70.092vw, 600px);
+    height: clamp(30px, 14.0184vw, 120px);
+    font-size: clamp(9px, 4.20552vw, 36px);
+  }
+
+  @include respond-to("xl") {
+    width: clamp(130px, 19.11764705882353vw, 520px);
+    height: clamp(27.5px, 4.044117647058823vw, 110px);
+    font-size: clamp(7px, 1.0294117647058822vw, 28px);
+  }
+
+  @include respond-to("2xl") {
+    width: clamp(100px, 10.416vw, 400px);
+    height: clamp(22.5px, 2.3436vw, 90px);
+    font-size: clamp(7px, 0.72912vw, 28px);
+  }
+}
+
+.button--filled {
+  @extend .button;
+  @apply bg-primary;
+  @apply text-dark;
+  transition: 0.3s all;
+  border-radius: 3px;
+
+  &:hover {
+    @apply bg-dark;
+    @apply text-primary;
+  }
+}
+
+.button--outline {
+  @extend .button;
+  border: 2px solid;
+  @apply border-primary;
+  @apply text-primary;
+  transition: 0.3s all;
+  border-radius: 3px;
+
+  &:hover {
+    @apply bg-primary;
+    @apply text-dark;
+  }
+}

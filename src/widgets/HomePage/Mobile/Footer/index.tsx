@@ -14,7 +14,7 @@ export const FooterMobile = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
-        <a href="#main-mob" className={styles.footer__content__logo}>
+        <a href="#header-mob" className={styles.footer__content__logo}>
           <Fade>{t("logo")}</Fade>
         </a>
         <NavigationTab />
