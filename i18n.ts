@@ -10,7 +10,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    fallbackLng: "ru",
     detection: {
       order: ["querystring", "cookie"],
       caches: ["cookie"],
@@ -21,6 +21,7 @@ i18n
     react: {
       useSuspense: false,
     },
+    lng: i18n.language || "ru",
   });
 
 export default i18n;
