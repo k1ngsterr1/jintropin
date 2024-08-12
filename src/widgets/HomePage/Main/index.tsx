@@ -11,10 +11,10 @@ export const Main = () => {
   const { t } = useTranslation();
   return (
     <>
+      <img src={MainIll} alt="" className={styles.container__img} />
       <main className={styles.container} id="main">
         <SocialMediaTab />
         <div className={styles.container__main}>
-          <img src={MainIll} alt="" className={styles.container__img} />
           <Fade>
             <h1 className={styles.container__heading}>
               <span className={styles.container__heading__span}>

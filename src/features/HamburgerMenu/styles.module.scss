@@ -9,7 +9,7 @@
     width: clamp(25px, 11.681999999999999vw, 100px);
     height: clamp(25px, 11.681999999999999vw, 100px);
   }
-  z-index: 10000000000000000000000000;
+  // z-index: 100000;
   &__burger {
     width: 100%;
     height: 100%;
@@ -17,7 +17,7 @@
     position: relative;
     background: none;
     cursor: pointer;
-    z-index: 10000000000000000000000001;
+    // z-index: 100001;
 
     &__line {
       position: absolute;
