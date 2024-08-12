@@ -9,6 +9,7 @@
     width: clamp(25px, 11.681999999999999vw, 100px);
     height: clamp(25px, 11.681999999999999vw, 100px);
   }
+  position: relative;
   z-index: 100000;
   &__burger {
     width: 100%;
