@@ -1,0 +1,28 @@
+@import "../../shared/styles/variables.scss";
+@import "../../shared/styles/mixins";
+.question {
+  position: relative;
+  .mob {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .footer {
+    @apply mt-24;
+  }
+
+  @include respond-to("xl") {
+    .mob {
+      display: none;
+    }
+    .pc {
+      display: block;
+    }
+    .footer {
+      @apply mt-32;
+    }
+  }
+}

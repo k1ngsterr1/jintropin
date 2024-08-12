@@ -14,6 +14,7 @@ const sideMenuContent: Record<Language, MenuItem[]> = {
     { name: "Контакты", href: "/contacts" },
     { name: "Противопоказания", href: "/contraindications" },
     { name: "Проверка", href: "/verification" },
+    { name: "Вопросы", href: "/questions" },
   ],
   en: [
     { name: "Feedback", href: "/feedback" },
@@ -23,6 +24,7 @@ const sideMenuContent: Record<Language, MenuItem[]> = {
     { name: "Contacts", href: "/contacts" },
     { name: "Contraindications", href: "/contraindications" },
     { name: "Verification", href: "/verification" },
+    { name: "Questions", href: "/questions" },
   ],
 };
 
