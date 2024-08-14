@@ -1,10 +1,10 @@
 import MainIll from "@assets/Main/MainPageIll.webp";
 import { SocialMediaTab } from "@features/Tab__Components/SocialMediaTab";
+import LinkButton from "@shared/ui/Buttons/LinkButton";
 import Paragraph from "@shared/ui/Paragraph";
 import { Fade } from "react-awesome-reveal";
-
-import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { useTranslation } from "react-i18next";
+
 import styles from "./styles.module.scss";
 
 export const Main = () => {

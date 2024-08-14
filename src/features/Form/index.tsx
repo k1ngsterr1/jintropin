@@ -14,7 +14,7 @@ export const FormComponent = () => {
       <Paragraph
         text={t("contact-pc.paragraph")}
         paragraphType="white"
-        margin="mt-4"
+        margin="mt-4 text-center !w-full"
       />
       <Input
         placeholder={t("contact-pc.placeholder1")}

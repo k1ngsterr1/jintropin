@@ -1,3 +1,6 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/variables";
+
 .container {
   &__img {
     width: clamp(900px, 93.744vw, 3600px);
@@ -20,6 +23,14 @@
     width: 75%;
     position: relative;
     margin: auto;
+
+    @include respond-to("tablet_sm", "landscape") {
+      width: 90%;
+    }
+
+    @include respond-to("xl") {
+      width: 75%;
+    }
   }
 }
 

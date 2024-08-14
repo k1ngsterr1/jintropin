@@ -5,6 +5,11 @@
   font-weight: 800;
   color: #fff200;
   font-size: clamp(15px, 7.0092vw, 60px);
+
+  @include respond-to("tablet_sm", "landscape") {
+    font-size: clamp(10px, 20 / 1024 * 100vw, 40px);
+  }
+
   @include respond-to("xl") {
     font-size: clamp(12px, 1.24992vw, 48px);
   }

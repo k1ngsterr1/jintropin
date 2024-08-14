@@ -1,13 +1,21 @@
-@mixin respond-to($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        $breakpoint-value: map-get($breakpoints, $breakpoint);
+@mixin respond-to($breakpoint, $orientation: null) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
 
-        @media (min-width: $breakpoint-value) {
-            @content;
-        }
+    @if $orientation == "landscape" {
+      @media (min-width: $breakpoint-value) and (orientation: landscape) {
+        @content;
+      }
+    } @else if $orientation == "portrait" {
+      @media (min-width: $breakpoint-value) and (orientation: portrait) {
+        @content;
+      }
+    } @else {
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
     }
-
-    @else {
-        @warn "Unknown breakpoint: #{$breakpoint}";
-    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
 }

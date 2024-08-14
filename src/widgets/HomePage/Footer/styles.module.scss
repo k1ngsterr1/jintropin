@@ -1,3 +1,6 @@
+@import "../../../shared/styles/mixins";
+@import "../../../shared/styles/variables";
+
 .footer {
   display: flex;
   align-items: center;
@@ -27,5 +30,14 @@
   &__logo {
     cursor: pointer;
     @apply mt-8;
+
+    @include respond-to("tablet_sm", "landscape") {
+      width: clamp(75px, 150 / 1024 * 100vw, 300px);
+    }
+
+    @include respond-to("xl") {
+      width: auto;
+      height: auto;
+    }
   }
 }

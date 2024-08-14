@@ -2,9 +2,9 @@ import ItemsGrid from "@features/Tab__Components/AdventagesTab/ItemsGrid";
 
 import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 
-import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const Application = () => {
   const { t } = useTranslation();

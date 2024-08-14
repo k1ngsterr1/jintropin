@@ -7,6 +7,10 @@
   align-items: center;
   @apply mt-96;
 
+  @include respond-to("tablet_sm", "landscape") {
+    @apply mt-32;
+  }
+
   @include respond-to("xl") {
     @apply mt-20;
   }

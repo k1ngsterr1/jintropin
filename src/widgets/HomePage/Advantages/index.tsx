@@ -1,8 +1,8 @@
 import { GrayCardGrid } from "@features/Tab__Components/AdventagesTab/GrayCardsGrid";
 import { Fade } from "react-awesome-reveal";
 
-import styles from "./styles.module.scss";
 import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 
 export const Advantages = () => {
   const { t } = useTranslation();

@@ -44,6 +44,13 @@
     font-size: clamp(9px, 4.20552vw, 36px);
   }
 
+  @include respond-to("tablet_sm", "landscape") {
+    width: clamp(80px, 160 / 1024 * 100vw, 320px);
+    height: clamp(20px, 40 / 1024 * 100vw, 80px);
+    text-align: center;
+    font-size: clamp(5px, 11 / 1024 * 100vw, 22px);
+  }
+
   @include respond-to("xl") {
     width: clamp(130px, 19.11764705882353vw, 520px);
     height: clamp(27.5px, 4.044117647058823vw, 110px);

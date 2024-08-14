@@ -1,12 +1,11 @@
-import React from "react";
 import { Header } from "@features/Header";
-import { QuestionsTab } from "../../features/Tab__Components/QuestionsTab";
-import { Footer } from "@widgets/HomePage/Footer";
-import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
-import styles from "./styles.module.scss";
-import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
 import { SideMenu } from "@features/SideMenu";
+import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
+import { Footer } from "@widgets/HomePage/Footer";
+import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
+import { QuestionsTab } from "../../features/Tab__Components/QuestionsTab";
+import styles from "./styles.module.scss";
 
 export const QuestionsPage = () => {
   return (

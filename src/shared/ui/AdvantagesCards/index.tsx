@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import { Fade } from "react-awesome-reveal";
+import styles from "./styles.module.scss";
 
 interface CardsI {
   image: string;

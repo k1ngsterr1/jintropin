@@ -48,6 +48,10 @@
     @apply text-lg;
     @apply text-primary;
 
+    @include respond-to("tablet_sm", "landscape") {
+      font-size: 16px !important;
+    }
+
     @include respond-to("lg") {
       @apply text-xl;
     }

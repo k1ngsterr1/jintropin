@@ -1,19 +1,19 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
 import { HomePage } from "@pages/HomePage/index";
 import { QuestionsPage } from "@pages/QuestionsPage";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 
-import "@shared/styles/global.scss";
 import AdvantagesPage from "@pages/Advantages";
-import ContraindicationsPage from "@pages/Contraindications";
 import CertificatePage from "@pages/Certificate";
-import VerificationPage from "@pages/Verification";
 import ContactsPage from "@pages/Contacts";
+import ContraindicationsPage from "@pages/Contraindications";
 import FeedbackPage from "@pages/Feedback";
+import VerificationPage from "@pages/Verification";
+import "@shared/styles/global.scss";
 
 function App() {
   localStorage.setItem("theme", "dark");

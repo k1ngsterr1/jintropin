@@ -8,12 +8,12 @@ import { VideoBlock } from "@widgets/HomePage/VideoBlock";
 import { Certificate } from "@widgets/HomePage/Сertificate";
 // import { Results } from "@widgets/HomePage/Results/index";
 import { Form } from "@widgets/HomePage/Form/index";
-import { Footer } from "../../widgets/HomePage/Footer/index";
 
 import { HeaderMobile } from "@features/Header/Mobile/Header";
 import { SideMenu } from "@features/SideMenu";
 import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import { Loader } from "@shared/ui/Loader";
+import { Footer } from "@widgets/HomePage/Footer";
 import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
 import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
 import { ChooseMobile } from "@widgets/HomePage/Mobile/Choose";

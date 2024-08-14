@@ -6,6 +6,7 @@
   justify-content: center;
   gap: clamp(22.5px, 2.3436vw, 90px);
   margin-top: clamp(28px, 13.083839999999999vw, 112px);
+
   @include respond-to("xl") {
     @apply mt-12;
   }

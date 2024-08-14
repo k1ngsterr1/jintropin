@@ -1,5 +1,6 @@
 @import "@shared/styles/mixins";
 @import "@shared/styles/variables";
+
 .input {
   width: 60%;
   height: clamp(25px, 2.604vw, 100px);
@@ -8,14 +9,23 @@
   background: none;
   font-family: "Raleway", sans-serif;
   font-size: clamp(9px, 4.20552vw, 36px);
+
   &::placeholder {
     @apply text-white;
     font-weight: 500;
   }
+
   @include respond-to("md") {
     font-size: clamp(9px, 4.20552vw, 36px);
     @apply p-10;
   }
+
+  @include respond-to("tablet_sm", "landscape") {
+    width: 100%;
+    font-size: clamp(7.5px, 15 / 1024 * 100vw, 30px);
+    @apply pb-5;
+  }
+
   @include respond-to("xl") {
     width: clamp(150px, 15.624vw, 600px);
     height: clamp(25px, 2.604vw, 100px);

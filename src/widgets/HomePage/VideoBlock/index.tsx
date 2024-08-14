@@ -18,6 +18,7 @@ export const VideoBlock = () => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language as Language;
   const content = reelsData[currentLanguage] || reelsData.en;
+
   return (
     <div className={styles.container}>
       <img src={DJIN} alt="djin" className={styles.container__img} />
@@ -26,13 +27,13 @@ export const VideoBlock = () => {
           onClick={goPrev}
           className={`${styles.customButton} ${styles.prev}`}
           src={left}
-          alt=""
+          alt="Previous Button"
         />
         <img
           onClick={goNext}
           className={`${styles.customButton} ${styles.next}`}
           src={right}
-          alt=""
+          alt="Next Button"
         />
         <Splide
           ref={splideRef}

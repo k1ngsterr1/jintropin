@@ -10,7 +10,7 @@
     display: none;
   }
 
-  @include respond-to("xl") {
+  @include respond-to("tablet_sm", "landscape") {
     .mob {
       display: none;
     }
