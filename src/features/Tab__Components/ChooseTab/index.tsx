@@ -1,14 +1,13 @@
-import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { photoCards } from "@shared/lib/content/ChooseCardsContent";
 import { useCustomButton } from "@shared/lib/hooks/useCustomButton";
 import { ChooseCard } from "@shared/ui/ChooseCard/index";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import left from "@assets/Choose/ArrowLeft.svg";
 import right from "@assets/Choose/ArrowRight.svg";
 
-import styles from "./styles.module.scss";
 import "@splidejs/react-splide/css";
+import styles from "./styles.module.scss";
 
 export const ChooseTab = () => {
   const { splideRef, goPrev, goNext } = useCustomButton();
@@ -20,13 +19,13 @@ export const ChooseTab = () => {
           onClick={goPrev}
           className={`${styles.customButton} ${styles.prev}`}
           src={left}
-          alt=""
+          alt="Previous"
         />
         <img
           onClick={goNext}
           className={`${styles.customButton} ${styles.next}`}
           src={right}
-          alt=""
+          alt="Next"
         />
         <Splide
           ref={splideRef}
@@ -61,13 +60,13 @@ export const ChooseTabMobile = () => {
           onClick={goPrev}
           className={`${styles.customButton} ${styles.prev}`}
           src={left}
-          alt=""
+          alt="Previous"
         />
         <img
           onClick={goNext}
           className={`${styles.customButton} ${styles.next}`}
           src={right}
-          alt=""
+          alt="Next"
         />
         <Splide
           ref={splideRef}

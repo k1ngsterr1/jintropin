@@ -1,19 +1,17 @@
-import React from "react";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
 import reelsData from "@shared/lib/content/ReelsCardsContent";
-import LinkButton from "@shared/ui/Buttons/LinkButton";
 import { useCustomButton } from "@shared/lib/hooks/useCustomButton";
 import { VideoCard } from "@shared/ui/VideoCard/index";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import left from "@assets/Choose/ArrowLeft.svg";
 import right from "@assets/Choose/ArrowRight.svg";
 
 import DJIN from "@assets/Advantages/ДЖИНТРОПИН.svg";
 
-import styles from "./styles.module.scss";
 import "@splidejs/react-splide/css";
-import { useTranslation } from "react-i18next";
 import { Language } from "i18n";
+import { useTranslation } from "react-i18next";
+import styles from "./styles.module.scss";
 export const VideoBlockMobile = () => {
   const { splideRef, goPrev, goNext } = useCustomButton();
   const { i18n } = useTranslation();
@@ -27,13 +25,13 @@ export const VideoBlockMobile = () => {
           onClick={goPrev}
           className={`${styles.customButton} ${styles.prev}`}
           src={left}
-          alt=""
+          alt="Previous"
         />
         <img
           onClick={goNext}
           className={`${styles.customButton} ${styles.next}`}
           src={right}
-          alt=""
+          alt="Next"
         />
         <Splide
           ref={splideRef}
