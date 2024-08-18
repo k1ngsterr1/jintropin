@@ -23,6 +23,10 @@
     text-align: center;
     margin: auto;
 
+    @include respond-to("xl") {
+      width: clamp(200px, 20.832vw, 800px);
+      height: clamp(200px, 20.832vw, 800px);
+    }
     &__img {
       position: relative;
       @include respond-to("md") {
