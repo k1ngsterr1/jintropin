@@ -1,5 +1,6 @@
 @import "../../shared/styles/variables.scss";
 @import "../../shared/styles/mixins";
+
 .advantages {
   position: relative;
   .mob {
@@ -14,7 +15,7 @@
     display: none;
   }
 
-  @include respond-to("xl") {
+  @include respond-to("tablet_sm") {
     .mob {
       display: none;
     }

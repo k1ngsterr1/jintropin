@@ -1,12 +1,13 @@
 import { Header } from "@features/Header";
-import styles from "./styles.module.scss";
 import { HeaderMobile } from "@features/Header/Mobile/Header";
-import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
-import { Advantages } from "@widgets/HomePage/Advantages";
-import { Footer } from "@widgets/HomePage/Footer";
-import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
 import { SideMenu } from "@features/SideMenu";
 import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
+import { Advantages } from "@widgets/HomePage/Advantages";
+import { Footer } from "@widgets/HomePage/Footer";
+import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
+import { FooterMobile } from "@widgets/HomePage/Mobile/Footer";
+import styles from "./styles.module.scss";
+
 const AdvantagesPage = () => {
   return (
     <div className={styles.advantages}>
