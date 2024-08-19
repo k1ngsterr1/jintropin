@@ -12,6 +12,7 @@ import "@splidejs/react-splide/css";
 import { Language } from "i18n";
 import { useTranslation } from "react-i18next";
 import styles from "./styles.module.scss";
+import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 
 export const VideoBlock = () => {
   const { splideRef, goPrev, goNext } = useCustomButton();
@@ -39,7 +40,7 @@ export const VideoBlock = () => {
           ref={splideRef}
           aria-label="My Favorite Images"
           options={{
-            width: 1500,
+            width: "100%",
             focus: "center",
             perPage: 3,
             perMove: 1,
