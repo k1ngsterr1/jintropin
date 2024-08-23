@@ -13,6 +13,8 @@ import { HeaderMobile } from "@features/Header/Mobile/Header";
 import { SideMenu } from "@features/SideMenu";
 import ThemeSwitcher from "@shared/lib/hooks/useThemeSwitch";
 import { Loader } from "@shared/ui/Loader";
+import { ThreeDScreen } from "@widgets/HomePage/3DScreen";
+import { ThreeDScreenMob } from "@widgets/HomePage/3DScreenMobile";
 import { Footer } from "@widgets/HomePage/Footer";
 import AdvantagesMobile from "@widgets/HomePage/Mobile/Advantages";
 import ApplicationMobile from "@widgets/HomePage/Mobile/Application";
@@ -52,6 +54,7 @@ export const HomePage = () => {
             <HeaderMobile />
             <MainMobile />
             <ApplicationMobile />
+            <ThreeDScreenMob />
             <AdvantagesMobile />
             <ContraindicationsMobile />
             <VideoBlockMobile />
@@ -65,6 +68,7 @@ export const HomePage = () => {
             <Main />
             <SideMenu />
             <Application />
+            <ThreeDScreen />
             <Advantages />
             <Contraindications />
             <VideoBlock />
