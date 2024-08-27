@@ -10,6 +10,7 @@ import styles from "./styles.module.scss";
 
 export const Footer = () => {
   const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__content}>
