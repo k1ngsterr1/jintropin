@@ -30,7 +30,7 @@ export const tabItems: Record<Language, TabItem[]> = {
         />,
         <SocialButton
           icon={FaWhatsapp}
-          href="https://www.whatsapp.com"
+          href="https://wa.me/77772886600"
           key="whatsapp"
         />,
         <SocialButton
@@ -52,7 +52,7 @@ export const tabItems: Record<Language, TabItem[]> = {
         />,
         <SocialButton
           icon={FaWhatsapp}
-          href="https://www.whatsapp.com"
+          href="https://wa.me/77772886600"
           key="whatsapp"
         />,
         <SocialButton
@@ -79,7 +79,7 @@ export const getTabItemsMobile = (size: number) => {
         <SocialButtonWithSize
           icon={FaWhatsapp}
           size={size}
-          href="https://www.whatsapp.com"
+          href="https://wa.me/77772886600"
           key="whatsapp"
         />,
         <SocialButtonWithSize
@@ -104,7 +104,7 @@ export const socialItems: { text: string; icons: React.ReactNode[] }[] = [
       />,
       <SocialButtonBigger
         icon={FaWhatsapp}
-        href="https://www.whatsapp.com"
+        href="https://wa.me/77772886600"
         key="whatsapp"
       />,
       <SocialButtonBigger
@@ -132,7 +132,7 @@ export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
       />,
       <SocialLink
         icon={FaWhatsapp}
-        href="https://www.whatsapp.com"
+        href="https://wa.me/77772886600"
         key="whatsapp"
       />,
       <SocialLink
@@ -159,7 +159,7 @@ export const adaptedMain: { text: string; icons: React.ReactNode[] }[] = [
       />,
       <SocialLink
         icon={FaWhatsapp}
-        href="https://www.whatsapp.com"
+        href="https://wa.me/77772886600"
         key="whatsapp"
       />,
       <SocialLink
