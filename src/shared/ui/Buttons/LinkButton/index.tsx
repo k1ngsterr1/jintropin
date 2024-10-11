@@ -27,7 +27,7 @@ const LinkButton: React.FC<ButtonLinkProps> = ({
       href={to}
       className={buttonClass}
       {...rest}
-      rel="noopener noreferrer"
+      // rel="noopener noreferrer"
       target={target}
     >
       {text}

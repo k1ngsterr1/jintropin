@@ -1,5 +1,5 @@
 import Button from "@shared/ui/Buttons/ReactButton/index";
-import Input from "@shared/ui/Input/index";
+import Input, { TelInput } from "@shared/ui/Input/index";
 import Paragraph from "@shared/ui/Paragraph/index";
 
 import { useTranslation } from "react-i18next";
@@ -23,7 +23,7 @@ export const FormComponent = () => {
         required
         margin="mt-10"
       />
-      <Input
+      <TelInput
         placeholder={t("contact-pc.placeholder2")}
         textAlign="center"
         type={currentLanguage === "ru" ? "phone" : "email"}

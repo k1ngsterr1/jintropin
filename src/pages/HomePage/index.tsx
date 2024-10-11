@@ -53,7 +53,7 @@ export const HomePage = () => {
           <div className={styles.mob}>
             <HeaderMobile />
             <MainMobile />
-            <ApplicationMobile />
+            {/* <ApplicationMobile /> */}
             <ThreeDScreenMob />
             <AdvantagesMobile />
             <ContraindicationsMobile />
@@ -67,7 +67,7 @@ export const HomePage = () => {
             <Header />
             <Main />
             <SideMenu />
-            <Application />
+            {/* <Application /> */}
             <ThreeDScreen />
             <Advantages />
             <Contraindications />

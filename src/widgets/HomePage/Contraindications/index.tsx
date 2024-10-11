@@ -22,11 +22,11 @@ export const Contraindications = () => {
         paragraphType="yellow"
       />
       <ContraindicationsTab />
-      <Button
+      {/* <Button
         text={t("contraindications-pc.contact")}
         buttonType="outline"
         margin="mt-16"
-      />
+      /> */}
       <InformationBanner />
     </div>
   );

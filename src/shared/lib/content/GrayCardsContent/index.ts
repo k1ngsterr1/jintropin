@@ -15,9 +15,9 @@ export const cardsData: Record<Language, CardItem[]> = {
     {
       id: 1,
       image: muscle,
-      title: "Ускоряет рост мышц и сжигание жира.",
+      title: "Ускоряет рост мышц и сжигание жира",
       description:
-        "Усиливает синтез белка, замедляет его распад и способствует снижению подкожного жира, обладает анаболическим и антикатаболическим действием.",
+        "Усиливает синтез белка, замедляет его распад и способствует снижению подкожного жира, обладает анаболическим и антикатаболическим действием",
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ export const cardsData: Record<Language, CardItem[]> = {
       image: pills,
       title: "Не распознают допинг-контроль",
       description:
-        "Улучшает спортивные показатели, при этом не определяется допинг-тестами при отмене за пару дней до сдачи.",
+        "Улучшает спортивные показатели, при этом не определяется допинг-тестами при отмене за пару дней до сдачи",
     },
     {
       id: 4,
@@ -45,30 +45,30 @@ export const cardsData: Record<Language, CardItem[]> = {
     {
       id: 1,
       image: muscle,
-      title: "Accelerates muscle growth and fat burning.",
+      title: "Accelerates muscle growth and fat burning",
       description:
-        "Enhances protein synthesis, slows down its breakdown, and helps reduce subcutaneous fat, has anabolic and anti-catabolic effects.",
+        "Enhances protein synthesis, slows down its breakdown, and helps reduce subcutaneous fat, has anabolic and anti-catabolic effects",
     },
     {
       id: 2,
       image: thunder,
       title: "Increases strength and endurance",
       description:
-        "Stimulates lipolysis of adipose tissue, mineral absorption, and improves reproductive function.",
+        "Stimulates lipolysis of adipose tissue, mineral absorption, and improves reproductive function",
     },
     {
       id: 3,
       image: pills,
       title: "Not detected by doping control",
       description:
-        "Improves athletic performance, while not being detected by doping tests if stopped a couple of days before testing.",
+        "Improves athletic performance, while not being detected by doping tests if stopped a couple of days before testing",
     },
     {
       id: 4,
       image: shield,
       title: "Strengthens immunity",
       description:
-        "Reduces inflammatory processes in the body, helps reduce pain, speeds up recovery, and supports immunity.",
+        "Reduces inflammatory processes in the body, helps reduce pain, speeds up recovery, and supports immunity",
     },
   ],
 };

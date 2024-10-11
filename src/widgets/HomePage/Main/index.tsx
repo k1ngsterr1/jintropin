@@ -13,7 +13,7 @@ export const Main = () => {
     <>
       <img src={MainIll} alt="Illustration" className={styles.container__img} />
       <main className={styles.container} id="main">
-        <SocialMediaTab />
+        {/* <SocialMediaTab /> */}
         <div className={styles.container__main}>
           <Fade>
             <h1 className={styles.container__heading}>
