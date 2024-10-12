@@ -41,6 +41,8 @@
   background: none;
   font-family: "Raleway", sans-serif;
   font-size: clamp(9px, 4.20552vw, 36px);
+  display: flex; // Make sure the input and button (flag) are aligned properly
+  align-items: center;
 
   &::placeholder {
     color: white;

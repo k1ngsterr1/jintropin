@@ -23,7 +23,7 @@ export const FormComponent = () => {
         required
         margin="mt-10"
       />
-      <TelInput
+      <Input
         placeholder={t("contact-pc.placeholder2")}
         textAlign="center"
         type={currentLanguage === "ru" ? "phone" : "email"}

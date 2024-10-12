@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   @apply mt-16;
-  @apply mb-16;
+  // @apply mb-16;
 
   &__img {
     width: clamp(900px, 93.744vw, 3600px);
@@ -17,7 +17,7 @@
     text-align: center;
     font-family: "Oswald", sans-serif;
     @apply text-white;
-    @apply pt-24;
+    @apply pt-20;
   }
 
   &__items {

@@ -42,7 +42,7 @@ export const SocialButtonBigger: React.FC<SocialButtonI> = ({
 }) => {
   return (
     <a className={styles.button} href={href} {...props}>
-      <Icon size={40} />
+      <Icon size={32} />
     </a>
   );
 };

@@ -27,6 +27,9 @@ import { CertificateMobile } from "@widgets/HomePage/Mobile/Сertificate";
 import { useEffect, useState } from "react";
 import MainMobile from "../../widgets/HomePage/Mobile/Main/index";
 import styles from "./styles.module.scss";
+import FeedbackMobile from "@widgets/Feedback/Mobile";
+import Feedback from "@widgets/Feedback";
+import { QuestionsTabMain } from "@features/Tab__Components/QuestionsTab";
 
 export const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -57,9 +60,11 @@ export const HomePage = () => {
             <ThreeDScreenMob />
             <AdvantagesMobile />
             <ContraindicationsMobile />
+            <QuestionsTabMain />
             <VideoBlockMobile />
             <CertificateMobile />
             <ChooseMobile />
+            <FeedbackMobile />
             <FormMobile />
             <FooterMobile />
           </div>
@@ -71,9 +76,11 @@ export const HomePage = () => {
             <ThreeDScreen />
             <Advantages />
             <Contraindications />
+            <QuestionsTabMain />
             <VideoBlock />
             <Certificate />
             <Choose />
+            <Feedback />
             <Form />
             <Footer />
           </div>

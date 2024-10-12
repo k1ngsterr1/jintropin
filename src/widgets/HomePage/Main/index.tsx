@@ -1,4 +1,4 @@
-import MainIll from "@assets/Main/MainPageIll.webp";
+import MainIll from "@assets/Main/Group 92.png";
 import { SocialMediaTab } from "@features/Tab__Components/SocialMediaTab";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 import Paragraph from "@shared/ui/Paragraph";
