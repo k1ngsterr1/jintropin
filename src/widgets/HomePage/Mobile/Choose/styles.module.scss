@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   @apply bg-gray;
-  @apply mt-16 pb-32;
+  @apply pb-32;
 
   &__heading {
     font-size: clamp(32px, 3.33312vw, 128px);

@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @apply pt-32;
-  @apply pb-32;
+  @apply pt-20;
+  @apply pb-24;
 
   &__heading {
     font-size: clamp(15px, 7.0092vw, 60px);

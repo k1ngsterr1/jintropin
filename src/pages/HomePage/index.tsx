@@ -30,6 +30,8 @@ import styles from "./styles.module.scss";
 import FeedbackMobile from "@widgets/Feedback/Mobile";
 import Feedback from "@widgets/Feedback";
 import { QuestionsTabMain } from "@features/Tab__Components/QuestionsTab";
+import Verification from "@widgets/Verification";
+import VerificationMobile from "@widgets/Verification/Mobile";
 
 export const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -63,6 +65,7 @@ export const HomePage = () => {
             <QuestionsTabMain />
             <VideoBlockMobile />
             <CertificateMobile />
+            <VerificationMobile />
             <ChooseMobile />
             <FeedbackMobile />
             <FormMobile />
@@ -79,6 +82,7 @@ export const HomePage = () => {
             <QuestionsTabMain />
             <VideoBlock />
             <Certificate />
+            <Verification />
             <Choose />
             <Feedback />
             <Form />
