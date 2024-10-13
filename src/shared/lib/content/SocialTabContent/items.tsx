@@ -25,7 +25,7 @@ export const tabItems: Record<Language, TabItem[]> = {
       icons: [
         <SocialButton
           icon={FaInstagram}
-          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
           key="instagram"
         />,
         <SocialButton
@@ -47,7 +47,7 @@ export const tabItems: Record<Language, TabItem[]> = {
       icons: [
         <SocialButton
           icon={FaInstagram}
-          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
           key="instagram"
         />,
         <SocialButton
@@ -73,7 +73,7 @@ export const getTabItemsMobile = (size: number) => {
         <SocialButtonWithSize
           icon={FaInstagram}
           size={size}
-          href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
           key="instagram"
         />,
         <SocialButtonWithSize
@@ -99,7 +99,7 @@ export const socialItems: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialButtonBigger
         icon={FaInstagram}
-        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
         key="instagram"
       />,
       <SocialButtonBigger
@@ -127,7 +127,7 @@ export const adaptedItems: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialLink
         icon={FaInstagram}
-        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
         key="instagram"
       />,
       <SocialLink
@@ -154,7 +154,7 @@ export const adaptedMain: { text: string; icons: React.ReactNode[] }[] = [
     icons: [
       <SocialLink
         icon={FaInstagram}
-        href="https://www.instagram.com/jintropin_shop?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        href="https://www.instagram.com/_jintropin.official?igsh=Z3h5NGQzdjNqYXg4"
         key="instagram"
       />,
       <SocialLink

@@ -26,12 +26,12 @@ export const ContraindicationsMobile = () => {
         />
       </Fade>
       <ContraindicationsTab />
-      <LinkButton
+      {/* <LinkButton
         to="#form-mob"
         text={t("contraindications-pc.contact")}
         buttonType="outline"
         margin="mt-16"
-      />
+      /> */}
       <InformationBanner />
     </div>
   );

@@ -1,5 +1,5 @@
 import Button from "@shared/ui/Buttons/ReactButton/index";
-import Input from "@shared/ui/Input/index";
+import Input, { TelInput } from "@shared/ui/Input/index";
 import Paragraph from "@shared/ui/Paragraph/index";
 
 import { useTranslation } from "react-i18next";

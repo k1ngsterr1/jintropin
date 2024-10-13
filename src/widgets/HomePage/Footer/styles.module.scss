@@ -23,7 +23,7 @@
     &__logo {
       @apply text-primary;
       font-family: "Unbounded", sans-serif;
-      font-size: clamp(16px, 1.66656vw, 64px);
+      font-size: clamp(9px, 18 / 1200 * 100vw, 36px);
     }
   }
 

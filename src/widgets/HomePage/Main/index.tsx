@@ -1,4 +1,4 @@
-import MainIll from "@assets/Main/MainPageIll.webp";
+import MainIll from "@assets/Main/Group 92.png";
 import { SocialMediaTab } from "@features/Tab__Components/SocialMediaTab";
 import LinkButton from "@shared/ui/Buttons/LinkButton";
 import Paragraph from "@shared/ui/Paragraph";
@@ -13,7 +13,7 @@ export const Main = () => {
     <>
       <img src={MainIll} alt="Illustration" className={styles.container__img} />
       <main className={styles.container} id="main">
-        <SocialMediaTab />
+        {/* <SocialMediaTab /> */}
         <div className={styles.container__main}>
           <Fade>
             <h1 className={styles.container__heading}>

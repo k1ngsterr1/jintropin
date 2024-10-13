@@ -39,16 +39,16 @@ export const Header = () => {
               <Fade delay={0.17}>
                 <Switcher changeLanguage={changeLanguage} />
               </Fade>
-              <Fade delay={0.19}>
+              {/* <Fade delay={0.19}>
                 <>
                   <LinkButton
-                    to="https://whatsapp.com"
+                    to="https://wa.me/77772886600"
                     target="_blank"
                     text={`${t("header-pc.whatsapp_btn")}`}
                     buttonType="outline"
                   />
                 </>
-              </Fade>
+              </Fade> */}
               <Fade delay={0.21}>
                 <>
                   <LinkButton
