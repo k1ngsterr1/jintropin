@@ -33,6 +33,41 @@
     @apply p-4;
   }
 }
+.form_input {
+  width: 60%;
+  height: clamp(25px, 2.604vw, 100px);
+  // border: 2px solid #fff;
+  border-radius: 4px;
+  outline: none;
+  background-color: #121212;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(9px, 4.20552vw, 36px);
+  @apply p-5;
+
+  &::placeholder {
+    @apply text-white;
+    font-weight: 500;
+    color: #999999;
+  }
+
+  @include respond-to("md") {
+    font-size: clamp(9px, 4.20552vw, 36px);
+    // @apply p-10;
+  }
+
+  @include respond-to("tablet_sm", "landscape") {
+    width: 100%;
+    font-size: clamp(7.5px, 15 / 1024 * 100vw, 30px);
+    // @apply pb-5;
+  }
+
+  @include respond-to("xl") {
+    width: clamp(150px, 15.624vw, 600px);
+    height: clamp(25px, 2.604vw, 100px);
+    font-size: clamp(8px, 0.83328vw, 32px);
+    @apply p-4;
+  }
+}
 .tel_input {
   width: 60%;
   height: clamp(25px, 2.604vw, 100px);

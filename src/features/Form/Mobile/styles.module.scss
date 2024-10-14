@@ -7,6 +7,7 @@
   align-items: center;
   @apply pb-20;
   &__paragraph {
+    width: 70%;
     text-align: center;
     font-size: clamp(8px, 3.73824vw, 32px);
     font-family: "Raleway", sans-serif;
