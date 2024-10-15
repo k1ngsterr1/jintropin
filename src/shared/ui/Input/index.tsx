@@ -32,6 +32,29 @@ const Input: React.FC<InputProps> = ({
     </Fade>
   );
 };
+
+export const FormInput: React.FC<InputProps> = ({
+  margin,
+  placeholder,
+  type = "text",
+  textAlign,
+  ...rest
+}) => {
+  const inputClass = `${styles.form_input} ${margin || ""}`;
+  const inputStyle = textAlign ? { textAlign } : {};
+
+  return (
+    <Fade className={styles.animation}>
+      <input
+        className={inputClass}
+        style={inputStyle}
+        type={type}
+        placeholder={placeholder}
+        {...rest}
+      />
+    </Fade>
+  );
+};
 export const TelInput: React.FC<InputProps> = ({
   margin,
   placeholder,
