@@ -21,8 +21,8 @@
   &__heading {
     font-size: clamp(15px, 7.0092vw, 60px);
     line-height: clamp(20px, 9.3456vw, 80px);
-    font-weight: 600;
-    font-family: "Oswald", sans-serif;
+    // font-weight: 600;
+    font-family: "Helvetica Neue", sans-serif;
     text-align: center;
     color: white;
   }
@@ -37,8 +37,8 @@
   @include respond-to("xl") {
     &__heading {
       font-size: clamp(32px, 3.33312vw, 128px);
-      font-weight: 700;
-      font-family: "Oswald", sans-serif;
+      // font-weight: 700;
+      font-family: "Helvetica Neue", sans-serif;
       text-align: center;
       color: white;
     }

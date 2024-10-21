@@ -1,27 +1,8 @@
-@import "breakpoint-slicer";
-@import "../../shared/styles/variables.scss";
-@import "../../shared/styles/mixins";
-
-.header_mob {
-  @apply bg-dark;
-  @apply p-4;
-
-  &__items {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
-    width: 90%;
-  }
-
-  @include respond-to("md") {
-    display: none;
-  }
-}
-
+@import "@shared/styles/mixins";
+@import "@shared/styles/variables";
 .header_pc {
   width: 100%;
-  @apply p-6 pt-10;
+  @apply pt-10 pb-10;
   z-index: 100;
   position: sticky;
   top: 0;
@@ -36,43 +17,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: auto;
     width: 90%;
     font-family: "Raleway", sans-serif;
-  }
-
-  &__icon {
-    @apply text-primary;
-  }
-
-  &__link {
-    @apply text-lg;
-    @apply text-primary;
-    font-family: "Roboto", sans-serif;
-
-    @include respond-to("tablet_sm", "landscape") {
-      font-size: 16px !important;
-    }
-
-    @include respond-to("lg") {
-      @apply text-xl;
-    }
+    @apply ml-12;
 
     @include respond-to("xl") {
-      @apply text-xl;
+      @apply ml-16;
+    }
+    @include respond-to("3xl") {
+      @apply ml-20;
+    }
+    @include respond-to("5xl") {
+      @apply ml-24;
     }
   }
-
-  @include respond-to("xs") {
-    display: none;
-  }
-
-  @include respond-to("sm") {
-    display: none;
-  }
-
-  @include respond-to("md") {
-    @apply text-lg;
-    display: flex;
-  }
+}
+.scrolled {
+  background-color: #1a1a1a;
 }
