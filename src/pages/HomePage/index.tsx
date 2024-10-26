@@ -32,9 +32,13 @@ import Feedback from "@widgets/Feedback";
 import { QuestionsTabMain } from "@features/Tab__Components/QuestionsTab";
 import Verification from "@widgets/Verification";
 import VerificationMobile from "@widgets/Verification/Mobile";
+import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const handleLoad = () => {
@@ -49,6 +53,12 @@ export const HomePage = () => {
 
     return () => window.removeEventListener("load", handleLoad);
   }, []);
+
+  useEffect(() => {
+    if (location.pathname === "/en") {
+      i18n.changeLanguage("en");
+    }
+  }, [location, i18n]);
   return (
     <>
       {isLoading ? (
