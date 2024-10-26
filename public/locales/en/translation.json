@@ -38,7 +38,8 @@
     "paragraph": "Submit a request to contact us",
     "placeholder1": "Your Name",
     "placeholder2": "Email Address",
-    "submit": "Submit"
+    "submit": "Submit",
+    "error": "Enter your credentials"
   },
   "verification": {
     "heading": "HOW TO PASS VERIFICATION?",

@@ -13,12 +13,18 @@ import { useMail } from "@shared/lib/hooks/useMain";
 export const FormComponent = () => {
   const [input1, setInput1] = useState<string>("");
   const [input2, setInput2] = useState<string>("");
+  const [error, setError] = useState<string>("");
   const { t, i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault(); // Prevents the default page reload
     console.log("Form submit prevented");
+    if (!input1 && !input2) {
+      setError(t("contact-pc.error"));
+    } else {
+      setError("");
+    }
     const data = {
       service_id: "service_jsdhhs8",
       template_id: "template_b2vc67r",
@@ -49,7 +55,6 @@ export const FormComponent = () => {
           onChange={(e) => {
             setInput1(e.target.value), console.log(e.target.value);
           }}
-          required
           margin="mt-10"
         />
         <span className="text-lg text-white text-end mb-2">
@@ -60,7 +65,6 @@ export const FormComponent = () => {
           textAlign="center"
           type={currentLanguage === "ru" ? "phone" : "email"}
           name="credentials2"
-          required
           onChange={(e) => {
             setInput2(e.target.value), console.log(e.target.value);
           }}
@@ -91,6 +95,9 @@ export const FormComponent = () => {
         margin="mt-10"
         onClick={handleSubmit}
       />
+      {error && (
+        <p className="mt-4 text-center text-red-500 text-sm w-full">{error}</p>
+      )}
     </form>
   );
 };
