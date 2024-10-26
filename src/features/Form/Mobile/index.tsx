@@ -29,7 +29,7 @@ export const FormComponentMobile = () => {
         from_name: "client",
         credentials1: input1,
         credentials2: input2,
-        to_name: "sales@jintropin.kz.",
+        to_name: "sales@jintropin.kz",
       },
     };
 
