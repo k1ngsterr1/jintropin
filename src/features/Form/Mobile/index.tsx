@@ -6,12 +6,19 @@ import { Fade } from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { useMail } from "@shared/lib/hooks/useMain";
+import Popup from "@entities/FormPopup";
 
 export const FormComponentMobile = () => {
+  const [show, setShow] = useState<boolean>(false);
   const [input1, setInput1] = useState<string>("");
   const [input2, setInput2] = useState<string>("");
   const [error, setError] = useState<string>("");
   const { t } = useTranslation();
+
+  const onClose = () => {
+    setShow(false);
+  };
+
   const handleSubmit = async (e: any) => {
     e.preventDefault(); // Prevents the default page reload
     console.log("Form submit prevented");
@@ -21,59 +28,63 @@ export const FormComponentMobile = () => {
     } else {
       setError("");
     }
-    const data = {
-      service_id: "service_jsdhhs8",
-      template_id: "template_b2vc67r",
-      user_id: "sRKeBlg3dRT4CPOig",
-      template_params: {
-        from_name: "client",
-        credentials1: input1,
-        credentials2: input2,
-        to_name: "sales@jintropin.kz",
-      },
-    };
+    // const data = {
+    //   service_id: "service_jsdhhs8",
+    //   template_id: "template_b2vc67r",
+    //   user_id: "sRKeBlg3dRT4CPOig",
+    //   template_params: {
+    //     from_name: "client",
+    //     credentials1: input1,
+    //     credentials2: input2,
+    //     to_name: "sales@jintropin.kz",
+    //   },
+    // };
 
-    const result = await useMail(data);
+    // const result = await useMail(data);
 
-    if (result === "Success") {
-      setInput1("");
-      setInput2("");
-    }
+    // if (result === "Success") {
+    //   setInput1("");
+    //   setInput2("");
+    // }
+    setShow(true);
   };
   return (
-    <form className={styles.container} onSubmit={handleSubmit}>
-      <p className={styles.container__paragraph}>
-        <Fade>{t("contact-pc.paragraph")}</Fade>
-      </p>
-      <Input
-        placeholder={t("contact-pc.placeholder1")}
-        textAlign="center"
-        margin="mt-10"
-        onChange={(e) => {
-          setInput1(e.target.value), console.log(e.target.value);
-        }}
-        name="credentials1"
-      />
-      <Input
-        placeholder={t("contact-pc.placeholder2")}
-        textAlign="center"
-        margin="mt-10"
-        onChange={(e) => {
-          setInput2(e.target.value), console.log(e.target.value);
-        }}
-        name="credentials2"
-      />
-      <Button
-        type="submit"
-        text={t("contact-pc.submit")}
-        buttonType="outline"
-        margin="mt-16"
-      />
-      {error && (
-        <p className="mt-8  w-[70%] text-center text-red-500 text-sm">
-          {error}
+    <>
+      <form className={styles.container} onSubmit={handleSubmit}>
+        <p className={styles.container__paragraph}>
+          <Fade>{t("contact-pc.paragraph")}</Fade>
         </p>
-      )}
-    </form>
+        <Input
+          placeholder={t("contact-pc.placeholder1")}
+          textAlign="center"
+          margin="mt-10"
+          onChange={(e) => {
+            setInput1(e.target.value), console.log(e.target.value);
+          }}
+          name="credentials1"
+        />
+        <Input
+          placeholder={t("contact-pc.placeholder2")}
+          textAlign="center"
+          margin="mt-10"
+          onChange={(e) => {
+            setInput2(e.target.value), console.log(e.target.value);
+          }}
+          name="credentials2"
+        />
+        <Button
+          type="submit"
+          text={t("contact-pc.submit")}
+          buttonType="outline"
+          margin="mt-16"
+        />
+        {error && (
+          <p className="mt-8  w-[70%] text-center text-red-500 text-sm">
+            {error}
+          </p>
+        )}
+      </form>
+      <Popup show={show} onClose={onClose} />
+    </>
   );
 };

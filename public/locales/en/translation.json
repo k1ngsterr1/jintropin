@@ -39,7 +39,10 @@
     "placeholder1": "Your Name",
     "placeholder2": "Email Address",
     "submit": "Submit",
-    "error": "Enter your credentials"
+    "error": "Enter your credentials",
+    "popup_heading": "Form submitted",
+    "popup_text": "We will contact you shortly.",
+    "popup_close": "Close"
   },
   "verification": {
     "heading": "HOW TO PASS VERIFICATION?",
