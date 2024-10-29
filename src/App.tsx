@@ -25,6 +25,7 @@ function App() {
           <Route path="/index.html" element={<Navigate to="/home" />} />
           <Route path="/index.shtml" element={<Navigate to="/home" />} />
           <Route path="/home" element={<HomePage />} />
+          <Route path="/en" element={<HomePage />} />
           <Route path="/questions" element={<QuestionsPage />} />
           <Route path="/advantages" element={<AdvantagesPage />} />
           <Route
